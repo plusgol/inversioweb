@@ -1,0 +1,21 @@
+{
+  "ntfy_topic": "radar-8f3k9q2m7z4x",
+  "updated": "2026-09-11",
+  "defaults": {
+    "threshold_pct": 3,
+    "volume_mult": 1.5,
+    "cooldown_min": 180
+  },
+  "symbols": [
+    { "ticker": "META", "yahoo": "META", "tv": "NASDAQ:META", "name": "Meta Platforms" },
+    { "ticker": "YUM", "yahoo": "YUM", "tv": "NYSE:YUM", "name": "Yum Brands" },
+    { "ticker": "CASY", "yahoo": "CASY", "tv": "NASDAQ:CASY", "name": "Casey's General Stores" },
+    { "ticker": "CAT", "yahoo": "CAT", "tv": "NYSE:CAT", "name": "Caterpillar" },
+    { "ticker": "NBIS", "yahoo": "NBIS", "tv": "NASDAQ:NBIS", "name": "Nebius Group" },
+    { "ticker": "CLNX", "yahoo": "CLNX.MC", "tv": "BME:CLNX", "name": "Cellnex" },
+    { "ticker": "ITX", "yahoo": "ITX.MC", "tv": "BME:ITX", "name": "Inditex" },
+    { "ticker": "CABK", "yahoo": "CABK.MC", "tv": "BME:CABK", "name": "CaixaBank" },
+    { "ticker": "TEF", "yahoo": "TEF.MC", "tv": "BME:TEF", "name": "Telefónica" },
+    { "ticker": "BBVA", "yahoo": "BBVA.MC", "tv": "BME:BBVA", "name": "BBVA" }
+  ]
+}

@@ -11,18 +11,21 @@
   <div class="wrap">
     <div class="brand"><span class="dot"></span> Radar d'inversió <small>· informes diaris</small></div>
     <nav class="top">
-      <a href="#avui">Avui</a>
-      <a href="#arxiu">Arxiu</a>
-      <a href="reports/2026-09-11.html">Darrer informe</a>
+      <a href="index.html" class="active">Inici</a>
+      <a href="reports/2026-09-11.html">Informe</a>
+      <a href="cartera.html">Cartera</a>
+      <a href="alertes.html">Alertes</a>
     </nav>
   </div>
 </header>
 
+<div id="ticker-tape"></div>
+
 <main class="wrap">
   <section class="hero">
     <div class="badge">Actualitzat l'11 de setembre de 2026</div>
-    <h1>Oportunitats i mercats, resumits cada dia</h1>
-    <p>Un informe diari que recull el que publiquen els mitjans financers (Expansión, Investing.com, El Español, CNBC, entre d'altres). Les empreses s'agrupen en <b>catalanes</b>, <b>espanyoles</b>, <b>europees</b> i <b>mundials</b>, amb la font de cada punt i la diferència clara entre <b>notícia</b> i <b>estimació d'analista</b>.</p>
+    <h1>El teu radar d'inversió, cada dia.</h1>
+    <p>Informe diari amb les notícies dels mitjans financers, agrupades en <b>catalanes</b>, <b>espanyoles</b>, <b>europees</b> i <b>mundials</b>. A més: <b>què comprar ara</b> amb etiquetes d'acció, cartera amb preus en directe i avisos automàtics al mòbil.</p>
   </section>
 
   <h2 class="section-title" id="avui">Informe d'avui <span class="pill">11/09/2026</span></h2>
@@ -49,15 +52,19 @@
   <div class="services">
     <div class="service">
       <h4>1. Fonts públiques</h4>
-      <p>Es recullen titulars i extractes de mitjans financers accessibles. Els articles de pagament no es poden llegir sencers.</p>
+      <p>Titulars i extractes de mitjans financers accessibles, comunicats d'empresa i registres oficials. Els articles de pagament no es poden llegir sencers.</p>
     </div>
     <div class="service">
       <h4>2. Informe diari</h4>
-      <p>Les empreses se separen en quatre blocs: catalanes, espanyoles, europees i mundials. Se distingeix el fet publicat de l'opinió o el preu objectiu d'analista. Cada punt porta enllaç i data.</p>
+      <p>Quatre blocs geogràfics i distinció clara entre notícia i estimació d'analista. Cada punt porta enllaç i data.</p>
     </div>
     <div class="service">
-      <h4>3. Avis manual</h4>
-      <p>Quan es vol, es copia el resum curt amb el botó de WhatsApp i s'envia on calgui.</p>
+      <h4>3. <a href="cartera.html">Cartera</a></h4>
+      <p>Les teves posicions amb preu en directe, pes, stop i una etiqueta d'acció: comprar, esperar o reduir.</p>
+    </div>
+    <div class="service">
+      <h4>4. <a href="alertes.html">Alertes automàtiques</a></h4>
+      <p>Un vigilant al núvol mira la llista cada 5 minuts i t'avisa al mòbil si alguna cosa es mou o surt una notícia forta.</p>
     </div>
   </div>
 
@@ -73,5 +80,6 @@
 </footer>
 
 <script src="assets/app.js"></script>
+<script src="assets/widgets.js"></script>
 </body>
 </html>

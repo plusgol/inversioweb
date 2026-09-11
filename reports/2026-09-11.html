@@ -12,10 +12,14 @@
     <div class="brand"><span class="dot"></span> Radar d'inversió <small>· informe diari</small></div>
     <nav class="top">
       <a href="../index.html">Inici</a>
-      <a href="../index.html#arxiu">Arxiu</a>
+      <a href="2026-09-11.html" class="active">Informe</a>
+      <a href="../cartera.html">Cartera</a>
+      <a href="../alertes.html">Alertes</a>
     </nav>
   </div>
 </header>
+
+<div id="ticker-tape"></div>
 
 <main class="wrap">
   <div class="report-head">
@@ -26,16 +30,74 @@
 
   <div class="counter">
     <div><div class="n">100</div><div class="l">notícies del dia</div></div>
-    <div><div class="n" style="color:#f2b829">23</div><div class="l">catalanes</div></div>
-    <div><div class="n" style="color:#e8482c">12</div><div class="l">espanyoles</div></div>
-    <div><div class="n" style="color:#3b82f6">15</div><div class="l">europees</div></div>
-    <div><div class="n" style="color:#22c58b">29</div><div class="l">mundials</div></div>
-    <div><div class="n" style="color:#a855f7">21</div><div class="l">macro / cripto</div></div>
+    <div><div class="n">23</div><div class="l">catalanes</div></div>
+    <div><div class="n">12</div><div class="l">espanyoles</div></div>
+    <div><div class="n">15</div><div class="l">europees</div></div>
+    <div><div class="n">29</div><div class="l">mundials</div></div>
+    <div><div class="n">21</div><div class="l">macro / cripto</div></div>
   </div>
 
   <div class="notice">
     <b>Com llegir això.</b> Resumeix publicacions públiques de mitjans financers, agrupades per <b>àrea geogràfica</b> (seu social principal). El <b>%</b> de potencial només s'indica quan una font dona un <b>preu objectiu</b>; llavors es compara amb la cotització de la font. No és consell financer.
   </div>
+
+  <!-- QUÈ COMPRAR ARA -->
+  <h2 class="section-title">Què comprar ara <span class="pill">senyal d'acció</span></h2>
+  <div class="table-wrap">
+    <table class="market-table">
+      <thead>
+        <tr>
+          <th>Empresa</th><th>Preu</th><th>Objectiu</th><th>Potencial</th>
+          <th>Moment</th><th>Puntuació</th><th>Acció</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Meta Platforms <span class="lbl">META</span></td>
+          <td class="num">649,52 $</td><td class="num">754,15 $</td>
+          <td class="num up">+16,1%</td><td class="lbl">Zona de compra</td>
+          <td><span class="score high">78</span></td>
+          <td><span class="action buy">Comprar</span></td>
+        </tr>
+        <tr>
+          <td>Yum Brands <span class="lbl">YUM</span></td>
+          <td class="num">145,59 $</td><td class="num">171,54 $</td>
+          <td class="num up">+17,8%</td><td class="lbl">Gairebé zona</td>
+          <td><span class="score mid">74</span></td>
+          <td><span class="action wait">Esperar</span></td>
+        </tr>
+        <tr>
+          <td>Casey's <span class="lbl">CASY</span></td>
+          <td class="num">636,65 $</td><td class="num">860,27 $</td>
+          <td class="num up">+35,1%</td><td class="lbl">Esperar millor punt</td>
+          <td><span class="score mid">70</span></td>
+          <td><span class="action wait">Esperar</span></td>
+        </tr>
+        <tr>
+          <td>Caterpillar <span class="lbl">CAT</span></td>
+          <td class="num">803,53 $</td><td class="num">917,58 $</td>
+          <td class="num up">+14,2%</td><td class="lbl">Esperar millor punt</td>
+          <td><span class="score mid">66</span></td>
+          <td><span class="action wait">Esperar</span></td>
+        </tr>
+        <tr>
+          <td>Nebius Group <span class="lbl">NBIS</span></td>
+          <td class="num">228,85 $</td><td class="num">253,80 $</td>
+          <td class="num up">+10,9%</td><td class="lbl">Estirat, no persegueixis</td>
+          <td><span class="score mid">52</span></td>
+          <td><span class="action wait">Esperar</span></td>
+        </tr>
+        <tr>
+          <td>Cellnex <span class="lbl">CLNX</span></td>
+          <td class="num">25,22 €</td><td class="num">24,00 €</td>
+          <td class="num down">−4,8%</td><td class="lbl">Tesi feble</td>
+          <td><span class="score low">38</span></td>
+          <td><span class="action reduce">Reduir</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source" style="margin-top:12px">Puntuació Radar: moment 35% · fonamentals 25% · valoració 20% · analistes 10% · risc/catalitzador 10%. El potencial prové del preu objectiu citat a cada font. Detall a <a href="../cartera.html">Cartera</a>. No és consell financer.</p>
 
   <!-- OPORTUNITAT DEL DIA -->
   <h2 class="section-title">🔥 Oportunitat del dia <span class="pill">amb % citat de la font</span></h2>
@@ -214,7 +276,8 @@
   </div>
 
   <!-- MERCATS -->
-  <h2 class="section-title" style="margin-top:40px">Resum de mercats <span class="pill">dades del 10-11/09</span></h2>
+  <h2 class="section-title">Resum de mercats <span class="pill">dades del 10-11/09</span></h2>
+  <div class="table-wrap">
   <table class="market-table">
     <thead><tr><th>Actiu / índex</th><th>Nivell</th><th>Variació</th><th>Data</th></tr></thead>
     <tbody>
@@ -233,6 +296,7 @@
       <tr><td>USD/JPY</td><td class="num">153,59</td><td class="num">—</td><td>11/09</td></tr>
     </tbody>
   </table>
+  </div>
 
   <div class="notice" style="margin-top:30px">
     <b>Avis important.</b> Contingut informatiu i educatiu. Resumeix informació publicada per tercers i no constitueix assessorament financer. Els percentatges de potencial provenen de preus objectiu d'analistes citats i poden no complir-se. Comprova sempre les fonts originals.
@@ -268,5 +332,6 @@ No és consell financer.
 </footer>
 
 <script src="../assets/app.js"></script>
+<script src="../assets/widgets.js"></script>
 </body>
 </html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartera · Radar d'inversió</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> Radar d'inversió <small>· terminal</small></div>
+    <nav class="top">
+      <a href="index.html">Inici</a>
+      <a href="reports/2026-09-11.html">Informe</a>
+      <a href="cartera.html" class="active">Cartera</a>
+      <a href="alertes.html">Alertes</a>
+    </nav>
+  </div>
+</header>
+
+<div id="ticker-tape"></div>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="badge">Cartera buida</div>
+    <h1>El teu capital, amb senyals de compra i venda.</h1>
+    <p>Preus en directe, estat de cada posició i què fer segons les regles del radar. Tot amb la font de cada dada. No és assessorament financer.</p>
+  </section>
+
+  <h2 class="section-title">Resum <span class="pill">dades de la cartera</span></h2>
+  <div class="grid">
+    <div class="stat live">
+      <div class="lbl">Valor invertit</div>
+      <div class="val" id="stat-invertit">— €</div>
+      <div class="sub" id="stat-posicions">0 posicions</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Efectiu disponible</div>
+      <div class="val" id="stat-efectiu">— €</div>
+      <div class="sub">Per desplegar en entrades escalonades</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Reserva mínima</div>
+      <div class="val" id="stat-reserva">— €</div>
+      <div class="sub">No invertir per sota d'aquest coixí</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Màxim per posició</div>
+      <div class="val" id="stat-max">— %</div>
+      <div class="sub">Límit de concentració</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Posicions <span class="pill">preu en directe</span></h2>
+  <div class="table-wrap" id="posicions-wrap" hidden>
+    <table class="portfolio-table">
+      <thead>
+        <tr>
+          <th>Empresa</th><th>Ticker</th><th>Quantitat</th><th>Preu compra</th>
+          <th>Stop</th><th>Objectiu</th><th>Acció</th>
+        </tr>
+      </thead>
+      <tbody id="posicions-body"></tbody>
+    </table>
+  </div>
+  <div class="grid" id="portfolio-widgets" style="margin-top:16px"></div>
+
+  <h2 class="section-title">Pla de desplegament <span class="pill">regles explícites</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Entrada escalonada</h3>
+      <p class="meta">Cada posició s'obre en 3 trams, no de cop.</p>
+      <p style="color:var(--color-ash);font-size:14px">Si el senyal és 🟢 COMPRAR, el primer tram és un terç del capital assignat. La resta s'afegeix si el preu es manté o millora la zona, mai si s'encareix massa de pressa.</p>
+    </div>
+    <div class="card">
+      <h3>Reserva de seguretat</h3>
+      <p class="meta">No invertim mai el 100% de l'efectiu.</p>
+      <p style="color:var(--color-ash);font-size:14px">Es manté un coixí per aprofitar caigudes i evitar vendre forçat. El percentatge es configura a <code>data/cartera.json</code>.</p>
+    </div>
+    <div class="card">
+      <h3>Sortida i stop</h3>
+      <p class="meta">Cada posició porta un nivell d'invalidació.</p>
+      <p style="color:var(--color-ash);font-size:14px">Si el preu trenca el stop o la tesi canvia (resultats dolents, retallada de preu objectiu), la posició passa a 🔴 REDUIR.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Què comprar ara <span class="pill">radar d'oportunitats</span></h2>
+  <div class="table-wrap">
+    <table class="market-table" id="radar-table">
+      <thead>
+        <tr>
+          <th>Empresa</th><th>Preu</th><th>Objectiu</th><th>Potencial</th>
+          <th>Moment</th><th>Puntuació</th><th>Acció</th>
+        </tr>
+      </thead>
+      <tbody id="radar-body">
+        <tr><td colspan="7" class="lbl">Carregant…</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source" style="margin-top:12px">El percentatge de potencial prové del preu objectiu citat. La puntuació Radar és una nota estructurada (moment 35% · fonamentals 25% · valoració 20% · analistes 10% · risc 10%). No és consell financer.</p>
+
+  <div class="notice">
+    <b>Com omplir la cartera.</b> Edita <code>data/cartera.json</code> amb l'efectiu disponible i les teves posicions (ticker, quantitat, preu de compra, stop, objectiu). També pots demanar-ho per xat a l'assistent i ho escriurà ell.
+  </div>
+
+  <a class="back" href="index.html">← Tornar a l'inici</a>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    Radar d'inversió · Terminal de seguiment · Dades de mercat mitjançant widgets de TradingView · Avisos automàtics via ntfy.sh
+  </div>
+</footer>
+
+<script>
+(function () {
+  function getJSON(url) {
+    if (location.protocol === "file:") return Promise.reject(new Error("file://"));
+    return fetch(url, { cache: "no-store" }).then(function (r) { return r.json(); });
+  }
+
+  function fmt(n) {
+    return (n === null || n === undefined) ? "—" : n.toLocaleString("ca-ES", { maximumFractionDigits: 2 });
+  }
+
+  var ACTION = {
+    buy:    { cls: "buy",    label: "COMPRAR" },
+    wait:   { cls: "wait",   label: "ESPERAR" },
+    reduce: { cls: "reduce", label: "REDUIR" }
+  };
+
+  function scoreCls(s) { return s >= 75 ? "high" : (s >= 45 ? "mid" : "low"); }
+
+  Promise.all([
+    getJSON("data/cartera.json").catch(function () { return null; }),
+    getJSON("data/radar.json").catch(function () { return null; })
+  ]).then(function (res) {
+    var c = res[0], radar = res[1];
+    if (!c) return;
+
+    var invertit = 0;
+    (c.posicions || []).forEach(function (p) {
+      invertit += (p.quantitat || 0) * (p.preu_compra || 0);
+    });
+    var efectiu = c.efectiu || 0;
+    var total = invertit + efectiu;
+    var reservaPct = (c.perfil && c.perfil.reserva_minima_pct) || 15;
+
+    document.getElementById("stat-invertit").textContent = fmt(invertit) + " €";
+    document.getElementById("stat-posicions").textContent = (c.posicions || []).length + " posicions";
+    document.getElementById("stat-efectiu").textContent = fmt(efectiu) + " €";
+    document.getElementById("stat-reserva").textContent = fmt(total * reservaPct / 100) + " €";
+    document.getElementById("stat-max").textContent = ((c.perfil && c.perfil.max_pct_per_posicio) || 20) + " %";
+
+    if ((c.posicions || []).length) {
+      var wrap = document.getElementById("posicions-wrap");
+      var body = document.getElementById("posicions-body");
+      wrap.hidden = false;
+      body.innerHTML = "";
+      (c.posicions || []).forEach(function (p) {
+        var a = ACTION[p.accio] || ACTION.wait;
+        var tr = document.createElement("tr");
+        tr.innerHTML =
+          "<td>" + (p.nom || "") + "</td>" +
+          "<td class='lbl'>" + (p.ticker || "") + "</td>" +
+          "<td class='num'>" + fmt(p.quantitat) + "</td>" +
+          "<td class='num'>" + fmt(p.preu_compra) + " €</td>" +
+          "<td class='num'>" + fmt(p.stop) + "</td>" +
+          "<td class='num'>" + fmt(p.objectiu) + "</td>" +
+          "<td><span class='action " + a.cls + "'>" + a.label + "</span></td>";
+        body.appendChild(tr);
+      });
+    }
+
+    if (!radar) return;
+    var tb = document.getElementById("radar-body");
+    tb.innerHTML = "";
+    (radar.empreses || []).forEach(function (e) {
+      var a = ACTION[e.action] || ACTION.wait;
+      var upCls = (e.upside_pct >= 0) ? "up" : "down";
+      var moment = e.moment || "—";
+      var tr = document.createElement("tr");
+      tr.innerHTML =
+        "<td>" + e.name + " <span class='lbl'>" + e.ticker + "</span></td>" +
+        "<td class='num'>" + fmt(e.price) + " $</td>" +
+        "<td class='num'>" + fmt(e.target) + " $</td>" +
+        "<td class='num " + upCls + "'>" + (e.upside_pct > 0 ? "+" : "") + fmt(e.upside_pct) + "%</td>" +
+        "<td class='lbl'>" + moment + "</td>" +
+        "<td><span class='score " + scoreCls(e.score) + "'>" + e.score + "</span></td>" +
+        "<td><span class='action " + a.cls + "'>" + a.label + "</span></td>";
+      tb.appendChild(tr);
+    });
+  });
+})();
+</script>
+<script src="assets/widgets.js"></script>
+</body>
+</html>

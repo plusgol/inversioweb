@@ -1,0 +1,14 @@
+{
+  "moneda": "EUR",
+  "actualitzat": "2026-09-11",
+  "efectiu": 0,
+  "perfil": {
+    "horitzo": "mixt",
+    "risc": "mitja",
+    "max_pct_per_posicio": 20,
+    "reserva_minima_pct": 15,
+    "entrades_escalonades": 3,
+    "stop_per_defecte_pct": 12
+  },
+  "posicions": []
+}

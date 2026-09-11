@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alertes · Radar d'inversió</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> Radar d'inversió <small>· terminal</small></div>
+    <nav class="top">
+      <a href="index.html">Inici</a>
+      <a href="reports/2026-09-11.html">Informe</a>
+      <a href="cartera.html">Cartera</a>
+      <a href="alertes.html" class="active">Alertes</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="badge">Vigilant automàtic</div>
+    <h1>Avís al mòbil quan alguna cosa es mou.</h1>
+    <p>Un procés al núvol mira la teva llista cada 5 minuts en hores de mercat. Si una acció puja <b>3% o més amb volum alt</b>, o surt una notícia de fort impacte, rep un avís a ntfy.sh i queda registrat aquí.</p>
+  </section>
+
+  <h2 class="section-title">Configuració ràpida <span class="pill">2 minuts</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1. Instal·la ntfy</h3>
+      <p class="meta">App gratuïta per a iOS i Android.</p>
+      <p style="color:var(--color-ash);font-size:14px">Cerca «ntfy» a la botiga d'aplicacions i instal·la-la.</p>
+    </div>
+    <div class="card">
+      <h3>2. Subscriu-te al tema</h3>
+      <p class="meta">Només cal enganxar aquesta adreça dins l'app.</p>
+      <p style="color:var(--color-ash);font-size:14px"><code>ntfy.sh/radar-8f3k9q2m7z4x</code><br>El tema és difícil d'endevinar; no posis dades personals als avisos.</p>
+    </div>
+    <div class="card">
+      <h3>3. Llista i llindars</h3>
+      <p class="meta">Es configuren a <code>data/watchlist.json</code>.</p>
+      <p style="color:var(--color-ash);font-size:14px">Llindar per defecte: <b>+3%</b> amb volum <b>1,5×</b> la mitjana. Pots afegir o treure empreses quan vulguis.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Historial d'alertes <span class="pill" id="alerts-count">0 avisos</span></h2>
+  <div id="alerts-list">
+    <div class="empty">
+      <h3>Encara no hi ha cap alerta</h3>
+      <p>Quan el vigilant detecti un moviment o una notícia rellevant, apareixerà aquí automàticament i t'arribarà al mòbil.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Com funciona <span class="pill">sense servidor propi</span></h2>
+  <div class="services">
+    <div class="service">
+      <h4>Preu i volum</h4>
+      <p>El procés consulta cotitzacions i volum de la llista i compara el moviment del dia amb la mitjana de volum esperada a aquesta hora.</p>
+    </div>
+    <div class="service">
+      <h4>Notícies</h4>
+      <p>Vigila titulars de mitjans financers, comunicats d'empresa i registres oficials (EDGAR/CNMV) de les mateixes companyies.</p>
+    </div>
+    <div class="service">
+      <h4>Anti-soroll</h4>
+      <p>Cada avís té una finestra de 3 hores per empresa i motiu, per no repetir el mateix missatge.</p>
+    </div>
+  </div>
+
+  <div class="notice">
+    <b>Límits.</b> Latència de 5-15 minuts (no és temps real pur). Els grans moviments sovint ja han passat quan surt la notícia. Pot haver-hi falsos positius i algun dia la font gratuïta de dades pot fallar. Això no és assessorament financer.
+  </div>
+
+  <a class="back" href="index.html">← Tornar a l'inici</a>
+</main>
+
+<footer class="site">
+  <div class="wrap">Radar d'inversió · Vigilant sobre GitHub Actions i ntfy.sh · Cost 0 €</div>
+</footer>
+
+<script>
+(function () {
+  function getJSON(url) {
+    if (location.protocol === "file:") return Promise.reject(new Error("file://"));
+    return fetch(url, { cache: "no-store" }).then(function (r) { return r.json(); });
+  }
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+
+  getJSON("data/alertes.json").then(function (d) {
+    var list = (d && d.alerts) || [];
+    document.getElementById("alerts-count").textContent = list.length + (list.length === 1 ? " avís" : " avisos");
+    if (!list.length) return;
+    var box = document.getElementById("alerts-list");
+    box.innerHTML = "";
+    list.slice().reverse().forEach(function (a) {
+      var el = document.createElement("div");
+      el.className = "alert-item";
+      el.innerHTML =
+        "<span class='akind " + (a.kind === "price" ? "price" : "news") + "'>" +
+        (a.kind === "price" ? "Preu" : "Notícia") + "</span>" +
+        "<div><h4>" + esc(a.title) + "</h4>" +
+        "<p>" + esc(a.body) + "</p>" +
+        "<div class='atime'>" + esc(a.time) + (a.ticker ? " · " + esc(a.ticker) : "") + "</div></div>";
+      box.appendChild(el);
+    });
+  }).catch(function () {});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "updated": "2026-09-11T14:54:03.423Z",
+  "alerts": [
+    {
+      "ticker": "YUM",
+      "kind": "news",
+      "title": "Notícia: YUM · Yum Brands",
+      "body": "Yum! Brands stock gains analyst support after Wells Fargo upgrade - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWFpIVXJmOTM4aVdBaU9QUHIzaG52TmRoTF9tal9qUjF2OGllXzlzUG45djhUWThQTm5KbHBCdzZoVXhTTG5lMFNCQmhnUUZVQ2pJcVRKRzlTMVdHSnk2ejQxMDRtbWIxMU05QnVjdFVsNWx6bGR6QWpHQklQRjBSdDZ0RkI4b21sczJ3eHY3d0I1bE14Z3FNN3RSZ0daVGM2X0tYWXNlQl9kZ1gwMGg5SVJCUXkwRlg1Nlo4amVSRnpXeUVoNWc?oc=5",
+      "time": "2026-09-11T14:53:58.292Z"
+    },
+    {
+      "ticker": "CASY",
+      "kind": "price",
+      "title": "CASY cau -3.08%",
+      "body": "Casey's General Stores (CASY): 608.31 -3.08% al dia. Volum 0.37× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-11T14:53:58.936Z",
+      "pct": -3.08
+    }
+  ]
+}

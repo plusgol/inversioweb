@@ -1,51 +1,70 @@
 # Radar d'inversió
 
-Web estàtica amb un **informe diari d'inversió**: oportunitats potencials i resum de mercats, amb la font de cada punt.
+Terminal d'inversió estàtic: informe diari, cartera amb preus en directe i alertes automàtiques. Estil visual **Sandclock** (canvas #0a0a0a, targetes #171717, accent menta #3fe280).
 
-- **Prototip sense API**: l'informe es genera manualment (l'assistent busca les notícies i escriu els fitxers).
-- **Cost**: 0 €. Només cal allotjament estàtic gratuït (GitHub Pages).
+- **Cost**: 0 €. GitHub Pages + GitHub Actions + ntfy.sh.
+- **Sense API de pagament**: dades públiques i widgets gratuïts de TradingView.
 
 ## Estructura
 
 ```
-index.html                 Portada + arxiu
-reports/AAAA-MM-DD.html    Un informe per dia
-data/reports.json          Índex dels informes (metadades)
-assets/style.css           estil
-assets/app.js              cerca, filtre i botó "Copiar resum WhatsApp"
+index.html                     Portada + arxiu d'informes
+reports/AAAA-MM-DD.html        Un informe per dia (feed de ~100 notícies)
+cartera.html                   Cartera, preus en directe i radar de compra
+alertes.html                   Historial d'alertes + com configurar ntfy
+data/cartera.json              La teva cartera (efectiu i posicions)
+data/radar.json                Puntuacions i etiquetes del dia (0-100)
+data/watchlist.json            Empreses vigilades i llindars d'alerta
+data/alertes.json              Historial d'alertes (l'escriu el bot)
+data/alertes-estat.json        Anti-repetició (l'escriu el bot)
+data/reports.json              Índex dels informes
+scripts/alertes.mjs            Vigilant de preus i notícies
+.github/workflows/alertes.yml  Execució automàtica cada 5 min (dies feiners)
+assets/style.css               Sistema de disseny Sandclock
+assets/app.js                  Cerca, filtres i botó "Copiar resum"
+assets/widgets.js              Widgets de TradingView
 ```
 
-## Com generar l'informe d'un dia
+## Etiquetes d'acció
 
-1. Demana a l'assistent: **«actualitza»** (opcionalment passa-li enllaços concrets).
-2. L'assistent cerca a les fonts, redacta `reports/AAAA-MM-DD.html` i actualitza l'arxiu.
-3. Afegeix l'entrada nova a `index.html` (bloc `#archive`) i a `data/reports.json`.
+- 🟢 **Comprar** — puntuació ≥75 i preu en zona de compra.
+- 🟡 **Esperar** — bona empresa, però estirada o amb massa incertesa.
+- 🔴 **Reduir** — puntuació <45, tesi trencada o preu per sobre de l'objectiu.
 
-## Format de l'informe
+Puntuació Radar: moment 35% · fonamentals 25% · valoració 20% · analistes 10% · risc/catalitzador 10%.
 
-- **Oportunitat del dia**: targetes destacades amb el potencial en **%**, que sempre prové d'un **preu objectiu citat** (mai inventat).
-- **Feed del dia**: objectiu de **~100 notícies/dia**, amb titular + resum d'una línia + font, filtrables per àrea.
-- **Resum de mercats**: índexs, matèries primeres i cripto.
+## Cartera
 
-> Rànquing i percentatges: només s'indiquen quan una font publica un preu objectiu. Un "pot pujar un X%" sempre porta la font i la data.
+Omple `data/cartera.json`:
 
-## Com publicar
-
-Primer cop:
-
-```powershell
-git init
-git add .
-git commit -m "primer informe"
-git branch -M main
-git remote add origin https://github.com/plusgol/inversioweb.git
-git push -u origin main
+```json
+{
+  "moneda": "EUR",
+  "efectiu": 1000,
+  "perfil": { "horitzo": "mixt", "max_pct_per_posicio": 20, "reserva_minima_pct": 15, "entrades_escalonades": 3, "stop_per_defecte_pct": 12 },
+  "posicions": [
+    { "ticker": "META", "tv": "NASDAQ:META", "nom": "Meta Platforms", "quantitat": 2, "preu_compra": 640, "stop": 600, "objectiu": 820, "accio": "buy" }
+  ]
+}
 ```
 
-A GitHub: **Settings → Pages → Source: Deploy from a branch → Branch: `main` / `/ (root)` → Save**.
-La web queda a `https://plusgol.github.io/inversioweb/`.
+`accio` pot ser `buy`, `wait` o `reduce`.
 
-Cada dia:
+## Alertes automàtiques (ntfy.sh)
+
+1. Instal·la l'app **ntfy** (iOS/Android).
+2. Subscriu-te al tema: **`radar-8f3k9q2m7z4x`**.
+3. Configura empreses i llindars a `data/watchlist.json`.
+
+El vigilant (`scripts/alertes.mjs`) s'executa cada 5 minuts en hores de mercat i avisa si:
+- una acció es mou **≥3% amb volum alt** (1,5× la mitjana esperada), o
+- surt una **notícia recent** d'aquella empresa.
+
+Cada avís té 3 hores de cooldown per empresa i motiu. L'historial queda a `alertes.html`.
+
+> Els temes de ntfy.sh són públics: qualsevol que sàpiga el nom pot llegir-los. Fes servir un nom difícil d'endevinar i no hi posis dades personals.
+
+## Publicar
 
 ```powershell
 git add .
@@ -53,31 +72,9 @@ git commit -m "informe DD-MM-AAAA"
 git push
 ```
 
-## Veure-ho en local
-
-Obre `index.html` al navegador. Si el navegador bloqueja alguna cosa, arrenca un servidor local:
-
-```powershell
-python -m http.server 8000
-```
-
-I visita `http://localhost:8000`.
-
-## Categories per àrea geogràfica
-
-Cada informe agrupa les empreses en quatre blocs, segons la seu social principal:
-
-- **Empreses catalanes** (groc)
-- **Empreses espanyoles**, fora de Catalunya (vermell)
-- **Empreses europees**, fora d'Espanya (blau)
-- **Empreses mundials**, fora d'Europa (verd)
-
-## Etiquetes dels informes
-
-- **notícia**: fet publicat per un mitjà.
-- **estimació**: opinió, preu objectiu o previsió d'un analista o mitjà.
-- **rumor**: informació no confirmada.
+GitHub Pages: **Settings → Pages → Branch `main` / `/ (root)`**.
+Web: `https://plusgol.github.io/inversioweb/`
 
 ## Avis
 
-Contingut informatiu. No és assessorament financer. Les dades provenen de les fonts citades i poden no ser en temps real.
+Contingut informatiu. **No és assessorament financer.** Els percentatges de potencial provenen de preus objectiu d'analistes citats i poden no complir-se. Les etiquetes d'acció són regles explícites sobre dades públiques, no prediccions.
