@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar d'inversió · informes diaris</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> Radar d'inversió <small>· informes diaris</small></div>
+    <nav class="top">
+      <a href="#avui">Avui</a>
+      <a href="#arxiu">Arxiu</a>
+      <a href="reports/2026-09-11.html">Darrer informe</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="badge">Actualitzat l'11 de setembre de 2026</div>
+    <h1>Oportunitats i mercats, resumits cada dia</h1>
+    <p>Un informe diari que recull el que publiquen els mitjans financers (Expansión, Investing.com, El Español, CNBC, entre d'altres), amb la font de cada punt i la diferència clara entre <b>notícia</b> i <b>estimació d'analista</b>.</p>
+  </section>
+
+  <h2 class="section-title" id="avui">Informe d'avui <span class="pill">11/09/2026</span></h2>
+  <a class="report-item" href="reports/2026-09-11.html" style="display:flex">
+    <span class="date">11/09/2026</span>
+    <span class="title">CPI als EUA, Oracle i el rècord del dièsel</span>
+    <span class="count">8 oportunitats →</span>
+  </a>
+
+  <h2 class="section-title" id="arxiu">Arxiu d'informes <span class="pill">cerca per paraula</span></h2>
+  <input class="search" id="archive-search" type="search" placeholder="Cerca per data, empresa o tema (p. ex. Oracle, Ibex, CPI)…">
+
+  <div id="archive">
+    <div class="report-item" data-date="2026-09-11">
+      <span class="date">11/09/2026</span>
+      <span class="title">CPI als EUA, Oracle i el rècord del dièsel</span>
+      <a class="count" href="reports/2026-09-11.html">Obrir →</a>
+    </div>
+  </div>
+
+  <p class="source" style="margin-top:6px">L'arxiu complet també és a <a href="data/reports.json">data/reports.json</a>, pensat per automatitzar-lo en el futur.</p>
+
+  <h2 class="section-title">Com funciona</h2>
+  <div class="services">
+    <div class="service">
+      <h4>1. Fonts públiques</h4>
+      <p>Es recullen titulars i extractes de mitjans financers accessibles. Els articles de pagament no es poden llegir sencers.</p>
+    </div>
+    <div class="service">
+      <h4>2. Informe diari</h4>
+      <p>Se separa el que és un fet publicat del que és una opinió o un preu objectiu d'analista. Cada punt porta enllaç i data.</p>
+    </div>
+    <div class="service">
+      <h4>3. Avis manual</h4>
+      <p>Quan es vol, es copia el resum curt amb el botó de WhatsApp i s'envia on calgui.</p>
+    </div>
+  </div>
+
+  <div class="notice" style="margin-top:30px">
+    <b>Avis important.</b> Aquest lloc té finalitat informativa. Resumeix informació publicada per tercers i no constitueix assessorament financer. Les dades de mercat poden no ser en temps real i estan subjectes a error. No és consell de compra ni de venda.
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    Radar d'inversió · Prototip estàtic · Informes generats manualment
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
