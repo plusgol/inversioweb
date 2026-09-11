@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-11T14:54:03.423Z",
+  "updated": "2026-09-11T21:18:51.086Z",
   "alerts": [
+    {
+      "ticker": "ITX",
+      "kind": "news",
+      "title": "Notícia: ITX · Inditex",
+      "body": "Inditex stock gains analyst support after half-year results - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaC1RV1NLV3BTSmgweGVkLUlzNXVOMzNsanc4aGlhN2NVeVY0czQ3QWI3TW1MNFROcy1jV3FZaE5tQWpnT0F2NmJnNTZIYnZPVVhhcmpuSDh0THlvSnJoWXF2MUpPVTA0ZXBSb25iQzBjbW54S3A0T1VLclZhRVNqYnBfYlBJRVdET0daTjkxQnpENWhrSWZTbjhRSTZ0Q0hMWXhqa0NKMXpKaDFFUk5YZFdCdS1pWnRKZFBQZXBZTQ?oc=5",
+      "time": "2026-09-11T21:18:48.179Z"
+    },
     {
       "ticker": "YUM",
       "kind": "news",
