@@ -57,3 +57,19 @@
     });
   });
 })();
+
+// Filtre del feed per regió
+(function () {
+  var buttons = document.querySelectorAll(".filters button[data-feed]");
+  if (!buttons.length) return;
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var r = btn.getAttribute("data-feed");
+      buttons.forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+      document.querySelectorAll(".feed-item[data-region]").forEach(function (item) {
+        item.style.display = (r === "all" || item.getAttribute("data-region") === r) ? "" : "none";
+      });
+    });
+  });
+})();

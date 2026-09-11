@@ -21,6 +21,14 @@ assets/app.js              cerca, filtre i botó "Copiar resum WhatsApp"
 2. L'assistent cerca a les fonts, redacta `reports/AAAA-MM-DD.html` i actualitza l'arxiu.
 3. Afegeix l'entrada nova a `index.html` (bloc `#archive`) i a `data/reports.json`.
 
+## Format de l'informe
+
+- **Oportunitat del dia**: targetes destacades amb el potencial en **%**, que sempre prové d'un **preu objectiu citat** (mai inventat).
+- **Feed del dia**: objectiu de **~100 notícies/dia**, amb titular + resum d'una línia + font, filtrables per àrea.
+- **Resum de mercats**: índexs, matèries primeres i cripto.
+
+> Rànquing i percentatges: només s'indiquen quan una font publica un preu objectiu. Un "pot pujar un X%" sempre porta la font i la data.
+
 ## Com publicar
 
 Primer cop:

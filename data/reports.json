@@ -1,14 +1,23 @@
 {
   "updated": "2026-09-11",
-  "categories": ["catalanes", "espanyoles", "europees", "mundials"],
+  "categories": ["catalanes", "espanyoles", "europees", "mundials", "macro", "cripto"],
   "reports": [
     {
       "date": "2026-09-11",
-      "title": "CPI als EUA, Oracle i el rècord del dièsel",
+      "title": "CPI càlid, petroli disparat i un feed de 100 notícies",
       "file": "reports/2026-09-11.html",
-      "opportunities": 26,
-      "by_region": { "catalanes": 5, "espanyoles": 7, "europees": 6, "mundials": 8 },
-      "sources": ["Expansión", "Investing.com", "El Español", "Behind the Markets", "Trading Strategy Guides", "CNBC", "Economía Digital", "Diari ARA", "Estrategias de Inversión", "dpa-AFX", "Tech Times", "FinanceCharts"]
+      "news": 100,
+      "featured_opportunities": 6,
+      "by_region": { "catalanes": 23, "espanyoles": 12, "europees": 15, "mundials": 29, "macro_cripto": 21 },
+      "top_upside": [
+        { "ticker": "CASY", "name": "Casey's", "upside_pct": 35, "source": "Behind the Markets, 11/09/2026" },
+        { "ticker": "META", "name": "Meta Platforms", "upside_pct": 27, "source": "JPMorgan via Behind the Markets, 11/09/2026" },
+        { "ticker": "YUM", "name": "Yum Brands", "upside_pct": 18, "source": "Wells Fargo via Behind the Markets, 11/09/2026" },
+        { "ticker": "CAT", "name": "Caterpillar", "upside_pct": 14, "source": "Freedom Broker via Behind the Markets, 11/09/2026" },
+        { "ticker": "NBIS", "name": "Nebius Group", "upside_pct": 11, "source": "Truist via Behind the Markets, 11/09/2026" },
+        { "ticker": "CLNX", "name": "Cellnex", "upside_pct": -5, "source": "BNP Paribas via Estrategias de Inversión, 10/09/2026" }
+      ],
+      "sources": ["Expansión", "Investing.com", "El Español", "Behind the Markets", "Trading Strategy Guides", "CNBC", "Economía Digital", "Diari ARA", "Estrategias de Inversión", "dpa-AFX", "Tech Times", "FinanceCharts", "Reuters", "RTTNews", "KabuWire", "Kitco", "Trading Economics", "Binance Square", "FameEX", "247wallst", "Bitcoin Sistemi", "Catalonia.com", "ACCIÓ", "Regió7", "Diari de Catalunya", "Nació Digital", "Markets.com", "EFE", "Morningstar"]
     }
   ]
 }
