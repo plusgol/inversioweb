@@ -124,6 +124,11 @@ nav.top a:hover { color: var(--text); text-decoration: none; }
   font-weight: 400;
 }
 
+.section-title.s-cat { border-left: 3px solid #f2b829; padding-left: 12px; border-radius: 4px; }
+.section-title.s-esp { border-left: 3px solid #e8482c; padding-left: 12px; border-radius: 4px; }
+.section-title.s-eur { border-left: 3px solid #3b82f6; padding-left: 12px; border-radius: 4px; }
+.section-title.s-mun { border-left: 3px solid #22c58b; padding-left: 12px; border-radius: 4px; }
+
 .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
 
 .card {

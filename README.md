@@ -55,6 +55,15 @@ python -m http.server 8000
 
 I visita `http://localhost:8000`.
 
+## Categories per àrea geogràfica
+
+Cada informe agrupa les empreses en quatre blocs, segons la seu social principal:
+
+- **Empreses catalanes** (groc)
+- **Empreses espanyoles**, fora de Catalunya (vermell)
+- **Empreses europees**, fora d'Espanya (blau)
+- **Empreses mundials**, fora d'Europa (verd)
+
 ## Etiquetes dels informes
 
 - **notícia**: fet publicat per un mitjà.

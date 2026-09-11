@@ -1,12 +1,14 @@
 {
   "updated": "2026-09-11",
+  "categories": ["catalanes", "espanyoles", "europees", "mundials"],
   "reports": [
     {
       "date": "2026-09-11",
       "title": "CPI als EUA, Oracle i el rècord del dièsel",
       "file": "reports/2026-09-11.html",
-      "opportunities": 6,
-      "sources": ["Expansión", "Investing.com", "El Español", "Behind the Markets", "Trading Strategy Guides", "CNBC"]
+      "opportunities": 26,
+      "by_region": { "catalanes": 5, "espanyoles": 7, "europees": 6, "mundials": 8 },
+      "sources": ["Expansión", "Investing.com", "El Español", "Behind the Markets", "Trading Strategy Guides", "CNBC", "Economía Digital", "Diari ARA", "Estrategias de Inversión", "dpa-AFX", "Tech Times", "FinanceCharts"]
     }
   ]
 }
