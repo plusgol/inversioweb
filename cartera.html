@@ -23,48 +23,54 @@
 
 <main class="wrap">
   <section class="hero">
-    <div class="badge">Cartera buida</div>
-    <h1>El teu capital, amb senyals de compra i venda.</h1>
-    <p>Preus en directe, estat de cada posició i què fer segons les regles del radar. Tot amb la font de cada dada. No és assessorament financer.</p>
+    <div class="badge">La meva cartera · 11/09/2026</div>
+    <h1>Què tinc i què he de fer.</h1>
+    <p>Valor, resultat i estat de cada posició, amb preu en directe, puntuació i etiqueta d'acció. Tot amb la font de cada dada. No és assessorament financer.</p>
   </section>
 
-  <h2 class="section-title">Resum <span class="pill">dades de la cartera</span></h2>
+  <h2 class="section-title">Resum <span class="pill">valors de la captura</span></h2>
   <div class="grid">
     <div class="stat live">
-      <div class="lbl">Valor invertit</div>
-      <div class="val" id="stat-invertit">— €</div>
-      <div class="sub" id="stat-posicions">0 posicions</div>
+      <div class="lbl">Valor actual</div>
+      <div class="val" id="s-valor">— €</div>
+      <div class="sub" id="s-posicions">— posicions</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Cost</div>
+      <div class="val" id="s-cost">— €</div>
+      <div class="sub">Total invertit</div>
+    </div>
+    <div class="stat">
+      <div class="lbl">Resultat (P/L)</div>
+      <div class="val" id="s-pl">— €</div>
+      <div class="sub" id="s-plpct">—</div>
     </div>
     <div class="stat">
       <div class="lbl">Efectiu disponible</div>
-      <div class="val" id="stat-efectiu">— €</div>
-      <div class="sub">Per desplegar en entrades escalonades</div>
-    </div>
-    <div class="stat">
-      <div class="lbl">Reserva mínima</div>
-      <div class="val" id="stat-reserva">— €</div>
-      <div class="sub">No invertir per sota d'aquest coixí</div>
-    </div>
-    <div class="stat">
-      <div class="lbl">Màxim per posició</div>
-      <div class="val" id="stat-max">— %</div>
-      <div class="sub">Límit de concentració</div>
+      <div class="val" id="s-efectiu">— €</div>
+      <div class="sub">Reserva recomanada: 10%</div>
     </div>
   </div>
+  <div class="notice" id="s-alerta" hidden></div>
 
-  <h2 class="section-title">Posicions <span class="pill">preu en directe</span></h2>
-  <div class="table-wrap" id="posicions-wrap" hidden>
+  <h2 class="section-title">Posicions <span class="pill">preu en directe als gràfics</span></h2>
+  <div class="table-wrap">
     <table class="portfolio-table">
       <thead>
         <tr>
-          <th>Empresa</th><th>Ticker</th><th>Quantitat</th><th>Preu compra</th>
-          <th>Stop</th><th>Objectiu</th><th>Acció</th>
+          <th>Empresa</th><th>Cost</th><th>Valor</th><th>P/L €</th><th>P/L %</th>
+          <th>Pes</th><th>Puntuació</th><th>Acció</th><th>Horitzó</th>
         </tr>
       </thead>
-      <tbody id="posicions-body"></tbody>
+      <tbody id="posicions-body">
+        <tr><td colspan="9" class="lbl">Carregant…</td></tr>
+      </tbody>
     </table>
   </div>
   <div class="grid" id="portfolio-widgets" style="margin-top:16px"></div>
+
+  <h2 class="section-title">Anàlisi posició a posició <span class="pill">per què i fins quan</span></h2>
+  <div class="grid" id="analisi"></div>
 
   <h2 class="section-title">Pla de desplegament <span class="pill">regles explícites</span></h2>
   <div class="grid">
@@ -75,34 +81,34 @@
     </div>
     <div class="card">
       <h3>Reserva de seguretat</h3>
-      <p class="meta">No invertim mai el 100% de l'efectiu.</p>
-      <p style="color:var(--color-ash);font-size:14px">Es manté un coixí per aprofitar caigudes i evitar vendre forçat. El percentatge es configura a <code>data/cartera.json</code>.</p>
+      <p class="meta">No invertir mai el 100% de l'efectiu.</p>
+      <p style="color:var(--color-ash);font-size:14px">Es manté un coixí per aprofitar caigudes i evitar vendre forçat. Ara mateix tens 0 € d'efectiu, així que no hi ha marge per afegir sense vendre alguna cosa.</p>
     </div>
     <div class="card">
       <h3>Sortida i stop</h3>
       <p class="meta">Cada posició porta un nivell d'invalidació.</p>
-      <p style="color:var(--color-ash);font-size:14px">Si el preu trenca el stop o la tesi canvia (resultats dolents, retallada de preu objectiu), la posició passa a 🔴 REDUIR.</p>
+      <p style="color:var(--color-ash);font-size:14px">Si el preu trenca el nivell o la tesi canvia (resultats dolents, retallada de preu objectiu), la posició passa a 🔴 REDUIR.</p>
     </div>
   </div>
 
   <h2 class="section-title">Què comprar ara <span class="pill">radar d'oportunitats</span></h2>
   <div class="table-wrap">
-    <table class="market-table" id="radar-table">
+    <table class="market-table">
       <thead>
         <tr>
           <th>Empresa</th><th>Preu</th><th>Objectiu</th><th>Potencial</th>
-          <th>Moment</th><th>Puntuació</th><th>Acció</th>
+          <th>Moment</th><th>Puntuació</th><th>Acció</th><th>Horitzó</th>
         </tr>
       </thead>
       <tbody id="radar-body">
-        <tr><td colspan="7" class="lbl">Carregant…</td></tr>
+        <tr><td colspan="8" class="lbl">Carregant…</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="source" style="margin-top:12px">El percentatge de potencial prové del preu objectiu citat. La puntuació Radar és una nota estructurada (moment 35% · fonamentals 25% · valoració 20% · analistes 10% · risc 10%). No és consell financer.</p>
+  <p class="source" style="margin-top:12px">El potencial prové del preu objectiu citat. La puntuació Radar és una nota estructurada (moment 35% · fonamentals 25% · valoració 20% · analistes 10% · risc 10%). No és consell financer.</p>
 
   <div class="notice">
-    <b>Com omplir la cartera.</b> Edita <code>data/cartera.json</code> amb l'efectiu disponible i les teves posicions (ticker, quantitat, preu de compra, stop, objectiu). També pots demanar-ho per xat a l'assistent i ho escriurà ell.
+    <b>Com actualitzar la cartera.</b> Edita <code>data/cartera.json</code> o demana-ho per xat a l'assistent: ell escriurà les posicions, l'efectiu i les vendes.
   </div>
 
   <a class="back" href="index.html">← Tornar a l'inici</a>
@@ -110,7 +116,7 @@
 
 <footer class="site">
   <div class="wrap">
-    Radar d'inversió · Terminal de seguiment · Dades de mercat mitjançant widgets de TradingView · Avisos automàtics via ntfy.sh
+    Radar d'inversió · Terminal de seguiment · Preus mitjançant widgets de TradingView · Avisos automàtics via ntfy.sh
   </div>
 </footer>
 
@@ -120,17 +126,15 @@
     if (location.protocol === "file:") return Promise.reject(new Error("file://"));
     return fetch(url, { cache: "no-store" }).then(function (r) { return r.json(); });
   }
-
-  function fmt(n) {
-    return (n === null || n === undefined) ? "—" : n.toLocaleString("ca-ES", { maximumFractionDigits: 2 });
+  function fmt(n, d) {
+    if (n === null || n === undefined) return "—";
+    return n.toLocaleString("ca-ES", { minimumFractionDigits: d || 0, maximumFractionDigits: d || 2 });
   }
-
   var ACTION = {
-    buy:    { cls: "buy",    label: "COMPRAR" },
-    wait:   { cls: "wait",   label: "ESPERAR" },
+    buy: { cls: "buy", label: "COMPRAR" },
+    wait: { cls: "wait", label: "ESPERAR" },
     reduce: { cls: "reduce", label: "REDUIR" }
   };
-
   function scoreCls(s) { return s >= 75 ? "high" : (s >= 45 ? "mid" : "low"); }
 
   Promise.all([
@@ -138,39 +142,50 @@
     getJSON("data/radar.json").catch(function () { return null; })
   ]).then(function (res) {
     var c = res[0], radar = res[1];
-    if (!c) return;
+    if (c) {
+      var r = c.resum || {};
+      document.getElementById("s-valor").textContent = fmt(r.valor_total) + " €";
+      document.getElementById("s-cost").textContent = fmt(r.cost_total) + " €";
+      var pl = r.pl_total;
+      var plEl = document.getElementById("s-pl");
+      plEl.textContent = (pl > 0 ? "+" : "") + fmt(pl) + " €";
+      plEl.style.color = pl >= 0 ? "var(--color-signal-mint)" : "var(--color-signal-down)";
+      document.getElementById("s-plpct").textContent = (r.pl_pct > 0 ? "+" : "") + fmt(r.pl_pct, 2) + "% · " + (c.posicions || []).length + " posicions";
+      document.getElementById("s-efectiu").textContent = fmt(c.efectiu) + " €";
+      if (r.alerta_concentracio) {
+        var a = document.getElementById("s-alerta");
+        a.hidden = false;
+        a.innerHTML = "<b>Vigila la concentració.</b> " + r.alerta_concentracio;
+      }
 
-    var invertit = 0;
-    (c.posicions || []).forEach(function (p) {
-      invertit += (p.quantitat || 0) * (p.preu_compra || 0);
-    });
-    var efectiu = c.efectiu || 0;
-    var total = invertit + efectiu;
-    var reservaPct = (c.perfil && c.perfil.reserva_minima_pct) || 15;
-
-    document.getElementById("stat-invertit").textContent = fmt(invertit) + " €";
-    document.getElementById("stat-posicions").textContent = (c.posicions || []).length + " posicions";
-    document.getElementById("stat-efectiu").textContent = fmt(efectiu) + " €";
-    document.getElementById("stat-reserva").textContent = fmt(total * reservaPct / 100) + " €";
-    document.getElementById("stat-max").textContent = ((c.perfil && c.perfil.max_pct_per_posicio) || 20) + " %";
-
-    if ((c.posicions || []).length) {
-      var wrap = document.getElementById("posicions-wrap");
       var body = document.getElementById("posicions-body");
-      wrap.hidden = false;
-      body.innerHTML = "";
+      var analisi = document.getElementById("analisi");
+      body.innerHTML = ""; analisi.innerHTML = "";
       (c.posicions || []).forEach(function (p) {
-        var a = ACTION[p.accio] || ACTION.wait;
+        var act = ACTION[p.accio] || ACTION.wait;
+        var up = p.pl_eur >= 0;
         var tr = document.createElement("tr");
         tr.innerHTML =
-          "<td>" + (p.nom || "") + "</td>" +
-          "<td class='lbl'>" + (p.ticker || "") + "</td>" +
-          "<td class='num'>" + fmt(p.quantitat) + "</td>" +
-          "<td class='num'>" + fmt(p.preu_compra) + " €</td>" +
-          "<td class='num'>" + fmt(p.stop) + "</td>" +
-          "<td class='num'>" + fmt(p.objectiu) + "</td>" +
-          "<td><span class='action " + a.cls + "'>" + a.label + "</span></td>";
+          "<td>" + p.nom + " <span class='lbl'>" + p.ticker + "</span></td>" +
+          "<td class='num'>" + fmt(p.cost) + " €</td>" +
+          "<td class='num'>" + fmt(p.valor_actual) + " €</td>" +
+          "<td class='num " + (up ? "up" : "down") + "'>" + (up ? "+" : "") + fmt(p.pl_eur) + " €</td>" +
+          "<td class='num " + (up ? "up" : "down") + "'>" + (up ? "+" : "") + fmt(p.pl_pct, 2) + "%</td>" +
+          "<td class='num'>" + fmt(p.pes_pct, 1) + "%</td>" +
+          "<td><span class='score " + scoreCls(p.score) + "'>" + p.score + "</span></td>" +
+          "<td><span class='action " + act.cls + "'>" + act.label + "</span></td>" +
+          "<td class='lbl'>" + (p.horitzo || "—") + "</td>";
         body.appendChild(tr);
+
+        var card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML =
+          "<h3>" + p.nom + " <span class='ticker'>" + p.ticker + "</span></h3>" +
+          "<div class='meta'>" + (p.moment || "") + " · Horitzó " + (p.horitzo || "—") + " · " + (p.tipus || "") + "</div>" +
+          "<div class='row'><b>Tesi:</b> <span>" + (p.tesi || "") + "</span></div>" +
+          "<div class='row'><b>Invalidació:</b> <span>" + (p.invalidacio || "") + "</span></div>" +
+          "<div class='risk'><b>Risc:</b> " + (p.risc || "") + "</div>";
+        analisi.appendChild(card);
       });
     }
 
@@ -178,18 +193,21 @@
     var tb = document.getElementById("radar-body");
     tb.innerHTML = "";
     (radar.empreses || []).forEach(function (e) {
+      if (e.cartera) return;
       var a = ACTION[e.action] || ACTION.wait;
       var upCls = (e.upside_pct >= 0) ? "up" : "down";
-      var moment = e.moment || "—";
+      var upTxt = (e.upside_pct === null || e.upside_pct === undefined) ? "—"
+        : (e.upside_pct > 0 ? "+" : "") + fmt(e.upside_pct, 1) + "%";
       var tr = document.createElement("tr");
       tr.innerHTML =
         "<td>" + e.name + " <span class='lbl'>" + e.ticker + "</span></td>" +
-        "<td class='num'>" + fmt(e.price) + " $</td>" +
-        "<td class='num'>" + fmt(e.target) + " $</td>" +
-        "<td class='num " + upCls + "'>" + (e.upside_pct > 0 ? "+" : "") + fmt(e.upside_pct) + "%</td>" +
-        "<td class='lbl'>" + moment + "</td>" +
+        "<td class='num'>" + (e.price ? fmt(e.price, 2) : "—") + "</td>" +
+        "<td class='num'>" + (e.target ? fmt(e.target, 2) : "—") + "</td>" +
+        "<td class='num " + upCls + "'>" + upTxt + "</td>" +
+        "<td class='lbl'>" + (e.moment || "—") + "</td>" +
         "<td><span class='score " + scoreCls(e.score) + "'>" + e.score + "</span></td>" +
-        "<td><span class='action " + a.cls + "'>" + a.label + "</span></td>";
+        "<td><span class='action " + a.cls + "'>" + a.label + "</span></td>" +
+        "<td class='lbl'>" + (e.horitzo || "—") + "</td>";
       tb.appendChild(tr);
     });
   });

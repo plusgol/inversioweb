@@ -7,6 +7,11 @@
     "cooldown_min": 180
   },
   "symbols": [
+    { "ticker": "QDVE", "yahoo": "QDVE.DE", "tv": "XETR:QDVE", "name": "S&P 500 Info Tech ETF" },
+    { "ticker": "ASML", "yahoo": "ASML.AS", "tv": "AMS:ASML", "name": "ASML Holding" },
+    { "ticker": "BYD", "yahoo": "1211.HK", "tv": "HKEX:1211", "name": "BYD Company" },
+    { "ticker": "SPCX", "yahoo": "SPCX", "tv": "NASDAQ:SPCX", "name": "SpaceX" },
+    { "ticker": "PL", "yahoo": "PL", "tv": "NYSE:PL", "name": "Planet Labs PBC" },
     { "ticker": "META", "yahoo": "META", "tv": "NASDAQ:META", "name": "Meta Platforms" },
     { "ticker": "YUM", "yahoo": "YUM", "tv": "NYSE:YUM", "name": "Yum Brands" },
     { "ticker": "CASY", "yahoo": "CASY", "tv": "NASDAQ:CASY", "name": "Casey's General Stores" },

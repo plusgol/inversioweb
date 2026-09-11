@@ -1,5 +1,6 @@
 {
   "updated": "2026-09-11",
+  "regla_frescor": "Cada informe només inclou notícies del mateix dia o, com a màxim, del dia anterior.",
   "categories": ["catalanes", "espanyoles", "europees", "mundials", "macro", "cripto"],
   "radar": "data/radar.json",
   "cartera": "data/cartera.json",
@@ -9,20 +10,26 @@
   "reports": [
     {
       "date": "2026-09-11",
-      "title": "CPI càlid, petroli disparat i un feed de 100 notícies",
+      "title": "La meva cartera, què fer avui",
       "file": "reports/2026-09-11.html",
-      "news": 100,
-      "featured_opportunities": 6,
-      "by_region": { "catalanes": 23, "espanyoles": 12, "europees": 15, "mundials": 29, "macro_cripto": 21 },
+      "news": 63,
+      "news_window": "2026-09-10..2026-09-11",
+      "by_region": { "catalanes": 6, "espanyoles": 10, "europees": 6, "mundials": 24, "macro_cripto": 17 },
+      "cartera": {
+        "valor_total": 1985.85,
+        "cost_total": 2014.26,
+        "pl_total": -28.41,
+        "pl_pct": -1.41,
+        "posicions": 5
+      },
       "top_upside": [
-        { "ticker": "CASY", "name": "Casey's", "upside_pct": 35, "action": "wait", "source": "Behind the Markets, 11/09/2026" },
+        { "ticker": "CASY", "name": "Casey's", "upside_pct": 41, "action": "wait", "source": "Behind the Markets, 11/09/2026" },
+        { "ticker": "YUM", "name": "Yum Brands", "upside_pct": 18, "action": "wait", "source": "Behind the Markets, 11/09/2026" },
         { "ticker": "META", "name": "Meta Platforms", "upside_pct": 16, "action": "buy", "source": "StockAnalysis / JPMorgan, 11/09/2026" },
-        { "ticker": "YUM", "name": "Yum Brands", "upside_pct": 18, "action": "wait", "source": "Wells Fargo via Behind the Markets, 11/09/2026" },
-        { "ticker": "CAT", "name": "Caterpillar", "upside_pct": 14, "action": "wait", "source": "Freedom Broker via Behind the Markets, 11/09/2026" },
-        { "ticker": "NBIS", "name": "Nebius Group", "upside_pct": 11, "action": "wait", "source": "Truist via Behind the Markets, 11/09/2026" },
+        { "ticker": "CAT", "name": "Caterpillar", "upside_pct": 14, "action": "wait", "source": "Behind the Markets, 11/09/2026" },
         { "ticker": "CLNX", "name": "Cellnex", "upside_pct": -5, "action": "reduce", "source": "BNP Paribas via Estrategias de Inversión, 10/09/2026" }
       ],
-      "sources": ["Expansión", "Investing.com", "El Español", "Behind the Markets", "Trading Strategy Guides", "CNBC", "Economía Digital", "Diari ARA", "Estrategias de Inversión", "dpa-AFX", "Tech Times", "FinanceCharts", "Reuters", "RTTNews", "KabuWire", "Kitco", "Trading Economics", "Binance Square", "FameEX", "247wallst", "Bitcoin Sistemi", "Catalonia.com", "ACCIÓ", "Regió7", "Diari de Catalunya", "Nació Digital", "Markets.com", "EFE", "Morningstar", "StockAnalysis"]
+      "sources": ["Expansión", "Expansión Catalunya", "Investing.com", "El Español", "Behind the Markets", "Trading Strategy Guides", "CNBC", "Reuters", "RTTNews", "KabuWire", "Kitco", "Trading Economics", "Binance Square", "FameEX", "247wallst", "Bitcoin Sistemi", "Markets.com", "Diario Córdoba", "MarketScreener", "FinanceCharts", "Morningstar", "StockAnalysis", "ad-hoc-news", "KabuWire", "StockStory"]
     }
   ]
 }

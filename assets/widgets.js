@@ -94,7 +94,10 @@
       card.className = "widget-box live";
       var lbl = document.createElement("div");
       lbl.className = "wlabel";
-      lbl.textContent = (p.nom || p.ticker) + " · " + (p.quantitat || 0) + " títols";
+      var val = (typeof p.valor_actual === "number")
+        ? " · " + p.valor_actual.toLocaleString("ca-ES", { maximumFractionDigits: 2 }) + " €"
+        : ((p.quantitat || 0) + " títols");
+      lbl.textContent = (p.nom || p.ticker) + val;
       card.appendChild(lbl);
       var box = document.createElement("div");
       card.appendChild(box);

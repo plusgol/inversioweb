@@ -9,7 +9,7 @@ Terminal d'inversió estàtic: informe diari, cartera amb preus en directe i ale
 
 ```
 index.html                     Portada + arxiu d'informes
-reports/AAAA-MM-DD.html        Un informe per dia (feed de ~100 notícies)
+reports/AAAA-MM-DD.html        Un informe per dia (només notícies del dia o del dia abans)
 cartera.html                   Cartera, preus en directe i radar de compra
 alertes.html                   Historial d'alertes + com configurar ntfy
 data/cartera.json              La teva cartera (efectiu i posicions)
@@ -33,17 +33,22 @@ assets/widgets.js              Widgets de TradingView
 
 Puntuació Radar: moment 35% · fonamentals 25% · valoració 20% · analistes 10% · risc/catalitzador 10%.
 
+## Regla de frescor de les notícies
+
+Cada informe només inclou notícies publicades el **mateix dia** o, com a màxim, el **dia anterior**.
+Cap notícia més antiga entra a l'informe, encara que sigui útil. Si un dia hi ha poques notícies noves, l'informe és més curt: la frescor té prioritat sobre la quantitat.
+
 ## Cartera
 
-Omple `data/cartera.json`:
+La cartera actual és a `data/cartera.json` amb valor, cost, P/L, puntuació, acció i horitzó de cada posició.
+Per actualitzar-la, edita el fitxer o demana-ho per xat.
 
 ```json
 {
   "moneda": "EUR",
-  "efectiu": 1000,
-  "perfil": { "horitzo": "mixt", "max_pct_per_posicio": 20, "reserva_minima_pct": 15, "entrades_escalonades": 3, "stop_per_defecte_pct": 12 },
+  "efectiu": 0,
   "posicions": [
-    { "ticker": "META", "tv": "NASDAQ:META", "nom": "Meta Platforms", "quantitat": 2, "preu_compra": 640, "stop": 600, "objectiu": 820, "accio": "buy" }
+    { "ticker": "ASML", "tv": "AMS:ASML", "nom": "ASML", "cost": 200, "valor_actual": 201.71, "pl_eur": 1.71, "pl_pct": 0.86, "score": 70, "accio": "wait", "horitzo": "24+ mesos" }
   ]
 }
 ```
