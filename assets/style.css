@@ -485,6 +485,39 @@ footer.site {
   font-size: 12px;
 }
 
+/* ==== Anàlisi de posicions ==== */
+.pos-card { display: flex; flex-direction: column; gap: var(--spacing-16); }
+.pos-card .pos-top { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--spacing-16); flex-wrap: wrap; }
+.pos-card .pos-top h3 { margin: 0; }
+.pos-card .pl-big { font-size: var(--text-heading-sm); font-weight: 500; font-variant-numeric: tabular-nums; }
+
+.metrics { display: flex; flex-wrap: wrap; gap: var(--spacing-8); }
+.metric {
+  border: 1px solid var(--color-graphite);
+  border-radius: var(--radius-cards);
+  padding: 8px 12px;
+  min-width: 110px;
+  background: var(--color-abyss);
+}
+.metric .k { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-ash); }
+.metric .v { font-size: var(--text-caption); font-weight: 500; color: var(--color-chalk); font-variant-numeric: tabular-nums; }
+
+.score-detail { display: flex; flex-direction: column; gap: 6px; }
+.score-detail .sd-row { display: grid; grid-template-columns: 120px 1fr 42px; align-items: center; gap: var(--spacing-8); font-size: 12px; color: var(--color-ash); }
+.score-detail .sd-bar { height: 6px; border-radius: 999px; background: var(--color-graphite); overflow: hidden; }
+.score-detail .sd-fill { height: 100%; background: var(--color-signal-mint); border-radius: 999px; }
+.score-detail .sd-fill.low { background: var(--color-signal-down); }
+.score-detail .sd-val { text-align: right; font-variant-numeric: tabular-nums; color: var(--color-chalk); }
+
+.analysis ul { margin: 0; padding-left: 18px; }
+.analysis li { font-size: var(--text-caption); color: var(--color-ash); margin-bottom: 8px; }
+.analysis li b { color: var(--color-chalk); font-weight: 500; }
+.analysis h4 { margin: 0 0 var(--spacing-8); font-size: var(--text-body); font-weight: 500; }
+
+.chart-slot { min-height: 220px; }
+.tech-slot { min-height: 420px; }
+.big-chart { height: 560px; border: 1px solid var(--color-graphite); border-radius: var(--radius-cards); overflow: hidden; background: var(--color-carbon); }
+
 @media (max-width: 720px) {
   .hero h1 { font-size: 40px; }
   .report-item { flex-wrap: wrap; }

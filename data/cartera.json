@@ -8,7 +8,7 @@
     "cost_total": 2014.26,
     "pl_total": -28.41,
     "pl_pct": -1.41,
-    "alerta_concentracio": "53% en un sol ETF tecnològic i ~70% tecnologia sumant ASML i SpaceX."
+    "alerta_concentracio": "53% en un sol ETF tecnològic i ~70% tecnologia sumant ASML i SpaceX. Amb 0 € d'efectiu no hi ha marge per afegir sense vendre res."
   },
   "perfil": {
     "horitzo": "mixt",
@@ -33,9 +33,26 @@
       "accio": "wait",
       "moment": "Mantenir",
       "horitzo": "12-24 mesos",
-      "tesi": "Exposició al sector tecnològic dels EUA (73 valors, TER 0,15%). Puja sostinguda per la IA, però el PER del sector és ~43 i els tipus alts la pressionen.",
-      "invalidacio": "Fed més dura del previst o frenada del creixement de beneficis tecnològics.",
-      "risc": "Concentració: més de la meitat de la cartera en un sol producte."
+      "metrics": {
+        "per_index": 43.0,
+        "per_fwd": null,
+        "mcap": null,
+        "preu_ref": 44.53,
+        "range52": null,
+        "data_ref": "08-09/09/2026",
+        "extra": "TER 0,15% · 73 valors · acumulació · ISIN IE00B3WJKG14"
+      },
+      "score_detail": { "moment": 24, "fonamentals": 18, "valoracio": 10, "analistes": 5, "risc": 5 },
+      "analisi": [
+        "Què és: ETF d'iShares que replica l'índex S&P 500 Capped 35/20 Information Technology. Dona exposició directa als beneficis de les grans tecnològiques dels EUA amb una comissió molt baixa (0,15%).",
+        "Per què puja: el cicle d'inversió en IA sosté el creixement de beneficis del sector i el cotitza a prop de màxims. El preu de referència era 44,53 € el 08/09 i encadenava cinc sessions de pujades.",
+        "El punt feble: el PER de l'índex és ~43, molt per sobre de la mitjana històrica del mercat. A valoracions altes, qualsevol pujada de tipus o decepció en resultats comprimeix el preu amb força.",
+        "El context macro no ajuda: l'IPC de l'11/09 va sortir càlid i el mercat dona ~76% de probabilitat que la Fed apugi tipus. Això pressiona els múltiples de la tecnologia.",
+        "Risc de cartera: aquest ETF és el 53,4% de la teva cartera. No és un problema del producte, sinó de concentració: si la tecnologia cau, cau tota la cartera alhora."
+      ],
+      "invalidacio": "Fed més dura del previst o frenada clara del creixement de beneficis tecnològics (Nvidia, Microsoft, Apple).",
+      "risc": "Concentració: més de la meitat de la cartera en un sol producte.",
+      "source": "iShares (04/09/2026) i StockInvest (08/09/2026)"
     },
     {
       "ticker": "ASML",
@@ -49,11 +66,28 @@
       "pes_pct": 10.2,
       "score": 70,
       "accio": "wait",
-      "moment": "Mantenir i afegir en correccions",
+      "moment": "Mantenir i afegir en caigudes",
       "horitzo": "24+ mesos",
-      "tesi": "Monopoli pràctic en litografia EUV i principal beneficiari del capex d'IA. És la major empresa europea per capitalització (~649.000 M$).",
+      "metrics": {
+        "per": 53.0,
+        "per_fwd": 28.4,
+        "mcap": "657.000 M$",
+        "preu_ref": null,
+        "range52": null,
+        "data_ref": "10-11/09/2026",
+        "extra": "Major empresa europea per capitalització · monopoli EUV"
+      },
+      "score_detail": { "moment": 25, "fonamentals": 20, "valoracio": 12, "analistes": 5, "risc": 8 },
+      "analisi": [
+        "Què és: fabricant neerlandès de màquines de litografia. És l'única empresa del món capaç de fabricar equips EUV, imprescindibles per als xips avançats. Sense ASML no hi ha xips de nova generació.",
+        "Posició: és la major empresa europea per capitalització (~657.000 M$ l'11/09), per davant de Roche i Nestlé. És el termòmetre del cicle de semiconductors i del capex d'IA.",
+        "Valoració: el PER dels últims dotze mesos és ~53, per sobre de la seva mitjana de 12 mesos (~46-48). En canvi, el PER forward baixa fins a ~28, perquè el mercat espera un creixement fort de beneficis. És exigent, però no absurd.",
+        "Per què mantenir: la qualitat del negoci és excepcional i el risc principal no és l'empresa, sinó el preu que pagues per ella. En correccions del sector, és de les primeres que es recuperen.",
+        "Què vigilar: les comandes trimestrals (bookings), les restriccions d'exportació a la Xina i el ritme d'inversió de les grans tecnològiques en fàbriques de xips."
+      ],
       "invalidacio": "Caiguda sostinguda de comandes o noves restriccions d'exportació a la Xina.",
-      "risc": "Valoració exigent i sensibilitat al cicle de semiconductors."
+      "risc": "Valoració exigent i sensibilitat al cicle de semiconductors.",
+      "source": "CompaniesMarketCap, FinanceCharts i StrongBuyAnalytics (10-11/09/2026)"
     },
     {
       "ticker": "BYD",
@@ -69,9 +103,26 @@
       "accio": "wait",
       "moment": "Mantenir amb stop",
       "horitzo": "6-12 mesos",
-      "tesi": "Líder mundial en vehicles elèctrics: vendes d'agost +17,8% (440.293 vehicles) i objectiu de 1,3 M a l'exterior. Però el benefici del 1S cau −20,5% per la guerra de preus a la Xina.",
-      "invalidacio": "Si els marges segueixen caient o perd el suport dels ~75 HKD.",
-      "risc": "Guerra de preus, competència local i exposició a la Xina."
+      "metrics": {
+        "per": 21.7,
+        "per_fwd": null,
+        "mcap": null,
+        "preu_ref": 79.55,
+        "range52": [71.40, null],
+        "data_ref": "10/09/2026",
+        "extra": "P/E un 36% per sota de la mitjana de 4 trimestres (34,1)"
+      },
+      "score_detail": { "moment": 20, "fonamentals": 14, "valoracio": 13, "analistes": 4, "risc": 4 },
+      "analisi": [
+        "Què és: el fabricant de vehicles elèctrics més gran de la Xina i un dels líders mundials. També fa bateries, autobusos i electrònica.",
+        "Per què estàs en pèrdues: vas comprar per sobre del preu actual. El valor cotitza a 79,55 HKD (10/09) i va caure un 2,75% aquell dia. El mínim de 52 setmanes és 71,40 HKD (30/06), o sigui que està a un ~11% del seu pitjor nivell de l'any.",
+        "El costat bo: el PER ha baixat fins a ~21,7, un 36% per sota de la mitjana de les últimes quatre trimestres. Les vendes d'agost van créixer un 17,8%, fins a 440.293 vehicles, i l'objectiu d'exportació és d'1,3 milions.",
+        "El costat dolent: el benefici del primer semestre va caure un 20,5% per la guerra de preus a la Xina. Vend més cotxes, però guanya menys per cada cotxe.",
+        "Què faria canviar la tesi: si els marges s'estabilitzen, mantenir; si segueixen caient o perd els 71-75 HKD, reduir."
+      ],
+      "invalidacio": "Si els marges segueixen caient o perd el suport dels ~71-75 HKD.",
+      "risc": "Guerra de preus, competència local i exposició a la Xina.",
+      "source": "ad-hoc-news, Wisesheets i FT (setembre 2026)"
     },
     {
       "ticker": "SPCX",
@@ -87,9 +138,27 @@
       "accio": "wait",
       "moment": "Mantenir",
       "horitzo": "12-24 mesos",
-      "tesi": "IPO el 12/06/2026 (la més gran de la història, ~1,77 bilions $). Starlink, Starship i infraestructura d'IA. El 10/09 es va publicar que revisa el pla de centres de dades i podria frenar l'expansió.",
+      "metrics": {
+        "per": null,
+        "per_fwd": null,
+        "mcap": "1,95 bilions $",
+        "preu_ref": 147.77,
+        "range52": null,
+        "data_ref": "10-11/09/2026",
+        "extra": "IPO 12/06/2026 a 135 $ · 7a empresa més valuosa del món"
+      },
+      "score_detail": { "moment": 22, "fonamentals": 16, "valoracio": 10, "analistes": 6, "risc": 6 },
+      "analisi": [
+        "Què és: SpaceX, la companyia d'Elon Musk. Starlink (internet per satèl·lit) és el motor d'ingressos actual; Starship, el coet reutilitzable, és l'opcionalitat de futur.",
+        "El que ha passat: va sortir a borsa el 12/06/2026 a 135 $ per acció, en la que va ser la major IPO de la història (~1,77 bilions de dòlars i +19% el primer dia). Avui cotitza vora els 148 $ i té una capitalització de ~1,95 bilions: la setena empresa més valuosa del món.",
+        "Catalitzador positiu: Starlink creix i el desplegament de satèl·lits és imparable.",
+        "Catalitzador negatiu: el 10/09 es va publicar que SpaceX revisa el seu pla de centres de dades i podria frenar l'expansió. Aquesta notícia va coincidir amb el teu valor actual.",
+        "Objectius d'analistes: el preu objectiu mitjà implica un +49%, però el rang és enorme (75-800 $), senyal que ningú no té clar quant val una empresa tan singular.",
+        "Risc important: és una acció post-IPO amb poca història, molt volàtil, i l'expiració de bloquejos de venda pot pressionar el preu."
+      ],
       "invalidacio": "Frenada de Starlink o pressió per l'expiració de lock-ups post-IPO.",
-      "risc": "Post-IPO molt volàtil i poca història com a cotitzada."
+      "risc": "Post-IPO molt volàtil, valoració exigent i poca història com a cotitzada.",
+      "source": "Nasdaq Private Market, Fiscal.ai, MarketBeat i The Information (10-11/09/2026)"
     },
     {
       "ticker": "PL",
@@ -105,9 +174,27 @@
       "accio": "reduce",
       "moment": "Mantenir amb stop estricte o reduir",
       "horitzo": "12-18 mesos",
-      "tesi": "Imatges de la Terra per satèl·lit: ingressos Q2 +58% fins a 116,1 M$ i 'Rule of 40' complert. Però la guia del Q3 (103 M$) va quedar un 10,5% per sota del consens.",
+      "metrics": {
+        "per": -15.0,
+        "per_fwd": null,
+        "mcap": "6.070 M$",
+        "preu_ref": null,
+        "range52": null,
+        "data_ref": "10/09/2026",
+        "extra": "Ingressos Q2 +58% · guia Q3 un 10,5% per sota del consens"
+      },
+      "score_detail": { "moment": 20, "fonamentals": 15, "valoracio": 8, "analistes": 2, "risc": 3 },
+      "analisi": [
+        "Què és: empresa d'imatges de la Terra per satèl·lit. Ven dades i serveis d'observació a governs, agricultura, defensa i companyies.",
+        "Per què estàs en pèrdues: la pitjor posició de la cartera, −39,6%. Vas comprar a un preu molt superior i el valor no ha recuperat aquell nivell.",
+        "El costat bo: els ingressos del Q2 van créixer un 58,1%, fins a 116,1 M$, i l'empresa diu que compleix la 'Rule of 40' per quart trimestre consecutiu.",
+        "El costat dolent: la guia per al Q3 va ser de 103 M$, un 10,5% per sota del que esperava el consens. En una empresa petita sense beneficis (PER negatiu, ~−15), una guia fluixa pesa molt.",
+        "Valoració: capitalitza uns 6.070 M$. És una aposta de creixement molt sensible a les notícies i als contractes públics.",
+        "Què fer: és raonable mantenir una posició petita amb un stop estricte, però no afegir-hi diners fins que la guia s'estabilitzi. Si torna a decebre o trenca mínims, reduir."
+      ],
       "invalidacio": "Trencar el mínim recent o una nova guia per sota de les expectatives.",
-      "risc": "Petita capitalització, molt volàtil i amb guia a la baixa."
+      "risc": "Petita capitalització, molt volàtil, encara no guanya diners i amb guia a la baixa.",
+      "source": "StockStory, Planet IR i CompaniesMarketCap (03-10/09/2026)"
     }
   ]
 }

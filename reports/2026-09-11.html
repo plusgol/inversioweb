@@ -48,7 +48,7 @@
       <thead>
         <tr><th>Empresa</th><th>Cost</th><th>Valor</th><th>P/L</th><th>Pes</th><th>Puntuació</th><th>Acció</th><th>Horitzó</th></tr>
       </thead>
-      <tbody>
+      <tbody id="portfolio-body">
         <tr>
           <td>S&amp;P 500 Info Tech <span class="lbl">QDVE · ETF</span></td>
           <td class="num">883,94 €</td><td class="num">1.060,37 €</td>
@@ -99,6 +99,13 @@
     <b>Observació important.</b> Més de la meitat de la cartera és en un sol ETF tecnològic dels EUA i, sumant ASML i SpaceX, prop del 70% és tecnologia. Amb 0 € d'efectiu no tens marge per afegir sense vendre res.
   </div>
 
+  <h3 style="margin:32px 0 12px;font-size:20px;font-weight:500">Gràfic principal</h3>
+  <div class="big-chart" data-bigchart="XETR:QDVE"></div>
+  <p class="source" style="margin-top:8px">Per defecte mostra el teu ETF tecnològic. Al cercador del gràfic pots escriure ASML, BYD, SpaceX o PL per canviar-lo.</p>
+
+  <h3 style="margin:32px 0 12px;font-size:20px;font-weight:500">Anàlisi detallada: per què i fins quan</h3>
+  <div class="grid" id="portfolio-analysis"></div>
+
   <!-- QUÈ COMPRAR ARA -->
   <h2 class="section-title">Què comprar ara <span class="pill">candidats externs</span></h2>
   <div class="table-wrap">
@@ -106,7 +113,7 @@
       <thead>
         <tr><th>Empresa</th><th>Preu</th><th>Objectiu</th><th>Potencial</th><th>Moment</th><th>Puntuació</th><th>Acció</th><th>Horitzó</th></tr>
       </thead>
-      <tbody>
+      <tbody id="radar-body">
         <tr>
           <td>Meta Platforms <span class="lbl">META</span></td>
           <td class="num">649,52 $</td><td class="num">754,15 $</td><td class="num up">+16,1%</td>
@@ -297,5 +304,6 @@ No és consell financer.
 
 <script src="../assets/app.js"></script>
 <script src="../assets/widgets.js"></script>
+<script src="../assets/portfolio.js"></script>
 </body>
 </html>

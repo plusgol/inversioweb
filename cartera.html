@@ -24,8 +24,8 @@
 <main class="wrap">
   <section class="hero">
     <div class="badge">La meva cartera · 11/09/2026</div>
-    <h1>Què tinc i què he de fer.</h1>
-    <p>Valor, resultat i estat de cada posició, amb preu en directe, puntuació i etiqueta d'acció. Tot amb la font de cada dada. No és assessorament financer.</p>
+    <h1>Què tinc, per què, i fins quan.</h1>
+    <p>Cada posició amb el resultat, les mètriques que justifiquen la decisió, el desglossament de la puntuació, la tesi detallada i el gràfic en directe. No és assessorament financer.</p>
   </section>
 
   <h2 class="section-title">Resum <span class="pill">valors de la captura</span></h2>
@@ -33,7 +33,7 @@
     <div class="stat live">
       <div class="lbl">Valor actual</div>
       <div class="val" id="s-valor">— €</div>
-      <div class="sub" id="s-posicions">— posicions</div>
+      <div class="sub" id="s-plpct">—</div>
     </div>
     <div class="stat">
       <div class="lbl">Cost</div>
@@ -43,7 +43,7 @@
     <div class="stat">
       <div class="lbl">Resultat (P/L)</div>
       <div class="val" id="s-pl">— €</div>
-      <div class="sub" id="s-plpct">—</div>
+      <div class="sub">Guany o pèrdua acumulada</div>
     </div>
     <div class="stat">
       <div class="lbl">Efectiu disponible</div>
@@ -53,7 +53,11 @@
   </div>
   <div class="notice" id="s-alerta" hidden></div>
 
-  <h2 class="section-title">Posicions <span class="pill">preu en directe als gràfics</span></h2>
+  <h2 class="section-title">Gràfic principal <span class="pill">cambia el símbol al cercador del gràfic</span></h2>
+  <div class="big-chart" data-bigchart="XETR:QDVE"></div>
+  <p class="source" style="margin-top:8px">Per defecte mostra el teu ETF tecnològic. Al cercador del gràfic pots escriure ASML, BYD, SpaceX o PL per canviar-lo.</p>
+
+  <h2 class="section-title">Posicions <span class="pill">taula i anàlisi</span></h2>
   <div class="table-wrap">
     <table class="portfolio-table">
       <thead>
@@ -62,15 +66,15 @@
           <th>Pes</th><th>Puntuació</th><th>Acció</th><th>Horitzó</th>
         </tr>
       </thead>
-      <tbody id="posicions-body">
+      <tbody id="portfolio-body">
         <tr><td colspan="9" class="lbl">Carregant…</td></tr>
       </tbody>
     </table>
   </div>
   <div class="grid" id="portfolio-widgets" style="margin-top:16px"></div>
 
-  <h2 class="section-title">Anàlisi posició a posició <span class="pill">per què i fins quan</span></h2>
-  <div class="grid" id="analisi"></div>
+  <h2 class="section-title">Anàlisi detallada <span class="pill">per què i fins quan</span></h2>
+  <div class="grid" id="portfolio-analysis"></div>
 
   <h2 class="section-title">Pla de desplegament <span class="pill">regles explícites</span></h2>
   <div class="grid">
@@ -91,7 +95,7 @@
     </div>
   </div>
 
-  <h2 class="section-title">Què comprar ara <span class="pill">radar d'oportunitats</span></h2>
+  <h2 class="section-title">Què comprar ara <span class="pill">radar d'oportunitats externes</span></h2>
   <div class="table-wrap">
     <table class="market-table">
       <thead>
@@ -116,103 +120,11 @@
 
 <footer class="site">
   <div class="wrap">
-    Radar d'inversió · Terminal de seguiment · Preus mitjançant widgets de TradingView · Avisos automàtics via ntfy.sh
+    Radar d'inversió · Terminal de seguiment · Preus i indicadors mitjançant widgets de TradingView · Avisos automàtics via ntfy.sh
   </div>
 </footer>
 
-<script>
-(function () {
-  function getJSON(url) {
-    if (location.protocol === "file:") return Promise.reject(new Error("file://"));
-    return fetch(url, { cache: "no-store" }).then(function (r) { return r.json(); });
-  }
-  function fmt(n, d) {
-    if (n === null || n === undefined) return "—";
-    return n.toLocaleString("ca-ES", { minimumFractionDigits: d || 0, maximumFractionDigits: d || 2 });
-  }
-  var ACTION = {
-    buy: { cls: "buy", label: "COMPRAR" },
-    wait: { cls: "wait", label: "ESPERAR" },
-    reduce: { cls: "reduce", label: "REDUIR" }
-  };
-  function scoreCls(s) { return s >= 75 ? "high" : (s >= 45 ? "mid" : "low"); }
-
-  Promise.all([
-    getJSON("data/cartera.json").catch(function () { return null; }),
-    getJSON("data/radar.json").catch(function () { return null; })
-  ]).then(function (res) {
-    var c = res[0], radar = res[1];
-    if (c) {
-      var r = c.resum || {};
-      document.getElementById("s-valor").textContent = fmt(r.valor_total) + " €";
-      document.getElementById("s-cost").textContent = fmt(r.cost_total) + " €";
-      var pl = r.pl_total;
-      var plEl = document.getElementById("s-pl");
-      plEl.textContent = (pl > 0 ? "+" : "") + fmt(pl) + " €";
-      plEl.style.color = pl >= 0 ? "var(--color-signal-mint)" : "var(--color-signal-down)";
-      document.getElementById("s-plpct").textContent = (r.pl_pct > 0 ? "+" : "") + fmt(r.pl_pct, 2) + "% · " + (c.posicions || []).length + " posicions";
-      document.getElementById("s-efectiu").textContent = fmt(c.efectiu) + " €";
-      if (r.alerta_concentracio) {
-        var a = document.getElementById("s-alerta");
-        a.hidden = false;
-        a.innerHTML = "<b>Vigila la concentració.</b> " + r.alerta_concentracio;
-      }
-
-      var body = document.getElementById("posicions-body");
-      var analisi = document.getElementById("analisi");
-      body.innerHTML = ""; analisi.innerHTML = "";
-      (c.posicions || []).forEach(function (p) {
-        var act = ACTION[p.accio] || ACTION.wait;
-        var up = p.pl_eur >= 0;
-        var tr = document.createElement("tr");
-        tr.innerHTML =
-          "<td>" + p.nom + " <span class='lbl'>" + p.ticker + "</span></td>" +
-          "<td class='num'>" + fmt(p.cost) + " €</td>" +
-          "<td class='num'>" + fmt(p.valor_actual) + " €</td>" +
-          "<td class='num " + (up ? "up" : "down") + "'>" + (up ? "+" : "") + fmt(p.pl_eur) + " €</td>" +
-          "<td class='num " + (up ? "up" : "down") + "'>" + (up ? "+" : "") + fmt(p.pl_pct, 2) + "%</td>" +
-          "<td class='num'>" + fmt(p.pes_pct, 1) + "%</td>" +
-          "<td><span class='score " + scoreCls(p.score) + "'>" + p.score + "</span></td>" +
-          "<td><span class='action " + act.cls + "'>" + act.label + "</span></td>" +
-          "<td class='lbl'>" + (p.horitzo || "—") + "</td>";
-        body.appendChild(tr);
-
-        var card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML =
-          "<h3>" + p.nom + " <span class='ticker'>" + p.ticker + "</span></h3>" +
-          "<div class='meta'>" + (p.moment || "") + " · Horitzó " + (p.horitzo || "—") + " · " + (p.tipus || "") + "</div>" +
-          "<div class='row'><b>Tesi:</b> <span>" + (p.tesi || "") + "</span></div>" +
-          "<div class='row'><b>Invalidació:</b> <span>" + (p.invalidacio || "") + "</span></div>" +
-          "<div class='risk'><b>Risc:</b> " + (p.risc || "") + "</div>";
-        analisi.appendChild(card);
-      });
-    }
-
-    if (!radar) return;
-    var tb = document.getElementById("radar-body");
-    tb.innerHTML = "";
-    (radar.empreses || []).forEach(function (e) {
-      if (e.cartera) return;
-      var a = ACTION[e.action] || ACTION.wait;
-      var upCls = (e.upside_pct >= 0) ? "up" : "down";
-      var upTxt = (e.upside_pct === null || e.upside_pct === undefined) ? "—"
-        : (e.upside_pct > 0 ? "+" : "") + fmt(e.upside_pct, 1) + "%";
-      var tr = document.createElement("tr");
-      tr.innerHTML =
-        "<td>" + e.name + " <span class='lbl'>" + e.ticker + "</span></td>" +
-        "<td class='num'>" + (e.price ? fmt(e.price, 2) : "—") + "</td>" +
-        "<td class='num'>" + (e.target ? fmt(e.target, 2) : "—") + "</td>" +
-        "<td class='num " + upCls + "'>" + upTxt + "</td>" +
-        "<td class='lbl'>" + (e.moment || "—") + "</td>" +
-        "<td><span class='score " + scoreCls(e.score) + "'>" + e.score + "</span></td>" +
-        "<td><span class='action " + a.cls + "'>" + a.label + "</span></td>" +
-        "<td class='lbl'>" + (e.horitzo || "—") + "</td>";
-      tb.appendChild(tr);
-    });
-  });
-})();
-</script>
 <script src="assets/widgets.js"></script>
+<script src="assets/portfolio.js"></script>
 </body>
 </html>
