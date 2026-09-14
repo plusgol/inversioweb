@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-11T21:18:51.086Z",
+  "updated": "2026-09-14T13:40:00.714Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "news",
+      "title": "Notícia: ASML · ASML Holding",
+      "body": "ASML Holding stock falls as analysts stick to aggressive price targets - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOWtlaEFnMmZSUGlPTlMtQW9UOFlBOW9fLXQ2ZFdoS3VRd1J4MXdWZnBwZkVoZzhJZk1lYXF2Sl95enpZLV9ISHoySVRaY0J4UlB3Y2tQSmlEZlh1Z2t2bGg3RlBEbGdRTjVWT1J5VEVzZzFnNUhybldsT3lFaXFGZUl6d0R5enA3V1FEQ1FIWVBkNmxJdDlzSnM5eko3dzJoakpOTmpobGlVZkYxZEsxcUpUOWlIOUtlXzg3MTZ6aE4zRVhCZ1FBQ0VMa215dw?oc=5",
+      "time": "2026-09-14T13:39:49.495Z"
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "news",
+      "title": "Notícia: NBIS · Nebius Group",
+      "body": "Rumble Soars 10% on Report Anthropic Is the $13.7B Compute Customer; CoreWeave and Nebius Drop 9% - 24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeWR2Q21yaHdLeExXWlAxSVlSNk1JalRVYTVTTW9GOHFUdjBKSFB1TU5JSlVGcXpTNDBkdjJFaGNHZ1ZxMkdKTkx4SlJROEZydjh0eWZmazVMYnBzbHptSUM5UndzRDlUeWh4T2wxNDluV2lhYnpaVWQzdUNRMDJkQmMxNGIwRUFCQ3RQanJRUEkzZElpaVc5dUhxdjY0c240aHNGSDFvWHdPbkZlUGFmd2ZRYWVzaklmQmZORno3Sl96RVV3UVJZUElOV3B6SkxRN2cw?oc=5",
+      "time": "2026-09-14T13:39:56.041Z"
+    },
     {
       "ticker": "ITX",
       "kind": "news",
