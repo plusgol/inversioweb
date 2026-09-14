@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-14T13:40:00.714Z",
+  "updated": "2026-09-14T18:52:42.083Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -6.13%",
+      "body": "ASML Holding (ASML): 1387.8 -6.13% al dia. Volum 1.53× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-14T18:52:27.873Z",
+      "pct": -6.13
+    },
     {
       "ticker": "ASML",
       "kind": "news",
