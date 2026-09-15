@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-14T18:52:42.083Z",
+  "updated": "2026-09-15T12:28:48.514Z",
   "alerts": [
+    {
+      "ticker": "CAT",
+      "kind": "news",
+      "title": "Notícia: CAT · Caterpillar",
+      "body": "Caterpillar stock falls as valuation concerns emerge despite strong quarterly earnings - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOS0NTZi1KTVNQS1AzVjhwVWhCcnYzdjRQLVZqbWZrdmIxSVhzWUxQWVhjZzNySk9PNGVEZnpmemttLWs4X0d6azBnanZLTVRaWEVIWkxjSGRzOHZKQnphRXRaLUFfWFN3cjNUVHRwQTFGS1h1b05tOERMR1hxbldkZFRzNHZqc19ab1V3aU9TeWs1WEVBYzBDbVp1MF9STFlZYnYydVhILWxIZmtfZWlsblh2bjZ4MENSSW1uaFlUUjZ0WlMyYngwODZ3?oc=5",
+      "time": "2026-09-15T12:28:42.926Z"
+    },
     {
       "ticker": "ASML",
       "kind": "price",
