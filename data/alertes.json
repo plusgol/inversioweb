@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-15T22:57:21.859Z",
+  "updated": "2026-09-16T20:11:13.676Z",
   "alerts": [
+    {
+      "ticker": "ITX",
+      "kind": "news",
+      "title": "Notícia: ITX · Inditex",
+      "body": "Inditex stock edges higher after record H1 2026 results and mixed margin signals - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZUl2RXZ1X202OEtZMXNudHBlYmRlQ2ZZWEV5YWV0ZGxQaktUZWpqaUZqWnBxMUhQVksxaEV5VU9XMFl2eHFVZEMxZEJGLTRlNHpxblV2Sk83QURFemNmSVoxWXlwdjdocUNSbld2X0dsRjJFSUJjaEJ4Q0pXZl9zNlBjaUFxOC1DSi1sa2dWNGx5aUFBeEsxYmRxVS1yU1RZbWdZelhCaUREal9CTzdHczFxa0xISVB5WmwyS1pjbi1FWlJUcWRtRnRBNF94Y3VW?oc=5",
+      "time": "2026-09-16T20:11:10.446Z"
+    },
     {
       "ticker": "ASML",
       "kind": "price",
