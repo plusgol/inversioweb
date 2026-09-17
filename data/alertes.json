@@ -1,6 +1,30 @@
 {
-  "updated": "2026-09-16T20:11:13.676Z",
+  "updated": "2026-09-17T12:26:00.781Z",
   "alerts": [
+    {
+      "ticker": "BYD",
+      "kind": "news",
+      "title": "Notícia: BYD · BYD Company",
+      "body": "BYD stock gains as Morgan Stanley cuts target to HKD 114 - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUEx3YVUyZW9ORjNOZXlGaW1GYlE0T3lzcEpVVTRSdE1QQ2Rqa0Z0eE1aVmhhWHViZ19ZTzJnOWVlYlFaUG9WdjY0UnZHeG56UzNKNTVYWm5UeVozeUtJa082SW0wSlFBWmc1T296R20wckFjbXduMkVHc0NLWi0tQW93VmJ0d2VBZGd6c2llZUozNDZjWXVPM00yR21sV3JBNV9reUh5QTh6LWpGQnc5aEhocGIydmNFbWFV?oc=5",
+      "time": "2026-09-17T12:25:50.344Z"
+    },
+    {
+      "ticker": "CAT",
+      "kind": "news",
+      "title": "Notícia: CAT · Caterpillar",
+      "body": "Caterpillar stock jumps as Citi targets USD 1,100 after strong quarter - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRnFuM3NjcVJRMFhjSVNkWU5BWDdkMGxVazJNdFNQVkY4WFEtdktrdXY1SXBqOHZTX21DS2sxbmRDdXp0Q2FaLWtSY05xSTVoOG0wOVRrT0k0TjRhSkhmUTFheDY4U1MxZkJXZy1nZFVRRV8xcDRFbktpd3ZidVpEZHdMRklJNjRobnhwSUthWW01UGxUMzdOclpFYTg2ODRmUzNtZ3lTX1pOWEpZZVhydEN0TVpqemkwN29yLThaeEJZQnhYM21zQ3BxWHRyQQ?oc=5",
+      "time": "2026-09-17T12:25:55.228Z"
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "news",
+      "title": "Notícia: NBIS · Nebius Group",
+      "body": "NBIS Stock Jumps As Nebius-Palantir AI Deal Sparks Momentum - timothysykes.com",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11UHJ6LW10UEQ1UFFlTVlvbEppWGVFRGg0X3NoN1JCSnhGMUQyUl9Iai1sOFpSc29Qa3hEeXhVSWJSNXQ1LWxNUzNlbXY0aGkzWW5zTkszLXNHMEp1dGVZemRPc0Q5NnZramVldDkzZGxjZUh3bzhDTTJGNA?oc=5",
+      "time": "2026-09-17T12:25:56.181Z"
+    },
     {
       "ticker": "ITX",
       "kind": "news",
