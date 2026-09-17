@@ -1,6 +1,30 @@
 {
-  "updated": "2026-09-17T12:26:00.781Z",
+  "updated": "2026-09-17T20:21:16.472Z",
   "alerts": [
+    {
+      "ticker": "PL",
+      "kind": "news",
+      "title": "Notícia: PL · Planet Labs PBC",
+      "body": "Why Is Planet Labs (PL) Stock Soaring Today - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVldtVUE2REZ3T2dyNmJ3RlFXRkxzMlB1Wk5WYWVOWjRITEQwNHRYT1pGZ2oxYmcwSDhybnNtc0Z3bU5RWUwtVUVTNjczanRIbFE0cDRXLVBPSVBjQjZpSW9NVTZaMGFIUTloUXk1dzVkT0xKTEo3Z19NOEJ4RzJhclBnYVZBRUtnVUViM2h5bXNEQmFyNnFwOFFrNFRzaWNfbXkxMQ?oc=5",
+      "time": "2026-09-17T20:21:07.014Z"
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS puja 4.12%",
+      "body": "Nebius Group (NBIS): 217.99 +4.12% al dia. Volum 1.82× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-17T20:21:11.379Z",
+      "pct": 4.12
+    },
+    {
+      "ticker": "CLNX",
+      "kind": "news",
+      "title": "Notícia: CLNX · Cellnex",
+      "body": "Cellnex stock falls as BlackRock lifts stake and underperformance persists - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSFZxQTlQaHhhUUh6X3JCMXl3SEFmYzNIemRqZTVzUjBVcFVMOFU5UXlhTUlSVWNYb3RBS3FHbVowNjdrQ2hKbGJ2RUQ1VnNTeXcyUllFa202R0tWazhWRHNaTkxtWDFzMFJJMkFFSlhLX0plV2gtSWY2Vnk4RkdOVFpyTTNCTWxmY3FxNUY5Qy1XeDc4Wmx5aGFOcVhOY25ua2lWSWZvX0NEUUExN2dDQ1FzNWdNLS1Sb1Z1bmRWaExXUzctMUV1ZlhnWFJTMWxrZ3dj?oc=5",
+      "time": "2026-09-17T20:21:12.565Z"
+    },
     {
       "ticker": "BYD",
       "kind": "news",
