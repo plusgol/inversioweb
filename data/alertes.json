@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-17T20:21:16.472Z",
+  "updated": "2026-09-18T12:05:53.444Z",
   "alerts": [
+    {
+      "ticker": "CAT",
+      "kind": "news",
+      "title": "Notícia: CAT · Caterpillar",
+      "body": "Caterpillar stock gains as Zacks highlights record backlog and earnings growth outlook - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObXIyRmlSYXdtU0lvaVZmWGQzdGhtSXZ6ZHZ0SUpEMEk1cVB6S3BRX3FNdjhSdkFnQ0NpTmU0UFBmQlk0WHI5RWVDLUFDQ1AydDMyMEthV2VZUVdvT21HYmRBc1lnUlpFcXp1M05CZnFDd1dGRzh4MUNEY3dxVWpvbmJtRHBQeVc4M01ncENuRHNsa05uc2FWZ3VaV2lvME1HZWszaTlCUDB6cDI1Y2lnTlVSVkVRY1U0ZzVBUDRRQUpIZlM1eHJmUU9XY25MUHc?oc=5",
+      "time": "2026-09-18T12:05:47.820Z"
+    },
+    {
+      "ticker": "TEF",
+      "kind": "price",
+      "title": "TEF cau -3.02%",
+      "body": "Telefónica (TEF): 3.595 -3.02% al dia. Volum 1.01× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-18T12:05:51.661Z",
+      "pct": -3.02
+    },
     {
       "ticker": "PL",
       "kind": "news",
