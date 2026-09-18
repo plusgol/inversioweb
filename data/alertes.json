@@ -1,6 +1,30 @@
 {
-  "updated": "2026-09-18T16:20:55.533Z",
+  "updated": "2026-09-18T21:38:07.257Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML puja 3.57%",
+      "body": "ASML Holding (ASML): 1446 +3.57% al dia. Volum 3.52× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-18T21:37:53.206Z",
+      "pct": 3.57
+    },
+    {
+      "ticker": "ASML",
+      "kind": "news",
+      "title": "Notícia: ASML · ASML Holding",
+      "body": "ASML Holding NV (ASML) Shares Surge 3.0% -- What GF Score of 94 Tells Investors - GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcTFoOE9NcWdGNVVkbXc0VUZyc3pfWDlNdEJYZXkxalpTZFJkck1MTTlKUThIUWNMcFdwLUtYYkNaYnhXblg2d0NkVzRBSHVYWDJtYkxKcWZoM3JqWjRYaGRXMjhjVlZxY0gzMm9Da2hkb3BSdHRuU3IxRU5iZnByWklBa3RwaGRqcWY5VkZoZGlLMVBjaTI3bmxHWlN6UmZPWEJhSXhwNzMzS1RaeWdWMQ?oc=5",
+      "time": "2026-09-18T21:37:53.900Z"
+    },
+    {
+      "ticker": "TEF",
+      "kind": "price",
+      "title": "TEF cau -3.61%",
+      "body": "Telefónica (TEF): 3.573 -3.61% al dia. Volum 5.98× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-18T21:38:05.448Z",
+      "pct": -3.61
+    },
     {
       "ticker": "ASML",
       "kind": "price",
