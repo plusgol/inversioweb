@@ -1,6 +1,30 @@
 {
-  "updated": "2026-09-18T12:05:53.444Z",
+  "updated": "2026-09-18T16:20:55.533Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML puja 3.57%",
+      "body": "ASML Holding (ASML): 1446 +3.57% al dia. Volum 3.52× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-18T16:20:38.943Z",
+      "pct": 3.57
+    },
+    {
+      "ticker": "PL",
+      "kind": "news",
+      "title": "Notícia: PL · Planet Labs PBC",
+      "body": "Planet’s Next Constellation Is Bigger Than Just An Upgrade (NYSE:PL) - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS3NvMFIyaEdaQXRvQnVhSmdOTHVOZ3dxTUNMMmZXUDl2YlVCT2NvVWhLWjlCX3JhZlZqSlBxdk5BeHBYWk01OTdsZXBLbVhxQ09PVEszTkZNcmF1RTAyeXJLWkN3eEV5RHJPTTZfS3JxTFU2c3dIODJRc3VFdlJwYzVBa1IyTk1ta3VUMVVIOXNjbFFNZ3h2NDJEVC1XNDA?oc=5",
+      "time": "2026-09-18T16:20:42.406Z"
+    },
+    {
+      "ticker": "TEF",
+      "kind": "price",
+      "title": "TEF cau -3.61%",
+      "body": "Telefónica (TEF): 3.573 -3.61% al dia. Volum 5.79× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-18T16:20:53.920Z",
+      "pct": -3.61
+    },
     {
       "ticker": "CAT",
       "kind": "news",
