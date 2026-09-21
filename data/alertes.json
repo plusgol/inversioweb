@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-18T21:38:07.257Z",
+  "updated": "2026-09-21T18:54:25.737Z",
   "alerts": [
+    {
+      "ticker": "META",
+      "kind": "price",
+      "title": "META puja 11.88%",
+      "body": "Meta Platforms (META): 744.84 +11.88% al dia. Volum 1.93× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-21T18:54:15.718Z",
+      "pct": 11.88
+    },
     {
       "ticker": "ASML",
       "kind": "price",
