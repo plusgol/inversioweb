@@ -1,6 +1,30 @@
 {
-  "updated": "2026-09-21T18:54:25.737Z",
+  "updated": "2026-09-21T22:24:51.427Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML puja 4.47%",
+      "body": "ASML Holding (ASML): 1481.4 +4.47% al dia. Volum 3.52× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-21T22:24:37.731Z",
+      "pct": 4.47
+    },
+    {
+      "ticker": "META",
+      "kind": "price",
+      "title": "META puja 11.34%",
+      "body": "Meta Platforms (META): 741.245 +11.34% al dia. Volum 2.56× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-21T22:24:41.969Z",
+      "pct": 11.34
+    },
+    {
+      "ticker": "TEF",
+      "kind": "price",
+      "title": "TEF cau -4.72%",
+      "body": "Telefónica (TEF): 3.575 -4.72% al dia. Volum 5.55× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-21T22:24:49.780Z",
+      "pct": -4.72
+    },
     {
       "ticker": "META",
       "kind": "price",
