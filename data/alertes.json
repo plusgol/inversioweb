@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-21T22:24:51.427Z",
+  "updated": "2026-09-22T12:22:38.805Z",
   "alerts": [
+    {
+      "ticker": "PL",
+      "kind": "news",
+      "title": "Notícia: PL · Planet Labs PBC",
+      "body": "how InvestingPro’s fair value spotted Planet Labs’ 54% crash By Investing.com - Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM28yU3c1MWpWVGxacHZkZkxXcWQ5ZmtHbVRzR2lBNXR1Mmh1SVNCT2lobGZjR1BCc0gwTWNFUnNWNnhtb3FSMDBPQUtSRmlWdW0ySmtDMGkzbUZXS28yUko5WGZYMWFUdVM4VF9CVDFBSGExNFIxWFJ2VGNsYVFENloxRW5KTWtaYlM0aXI5RWhfZklCSmlPOG9iQVl2c1VwVnhNWW0wZzFQX2hYTW5WalcwT1JhSGpXeFE?oc=5",
+      "time": "2026-09-22T12:22:29.759Z"
+    },
     {
       "ticker": "ASML",
       "kind": "price",
