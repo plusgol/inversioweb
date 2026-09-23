@@ -1,6 +1,30 @@
 {
-  "updated": "2026-09-22T12:22:38.805Z",
+  "updated": "2026-09-23T12:34:48.129Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "news",
+      "title": "Notícia: ASML · ASML Holding",
+      "body": "ASML Holding stock gains as sales outlook reaches EUR 45 billion - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdWZWTUQtTmFkTEhsdUJ1UzBnSnpKc1JwY3NPOGlGYkQ2NTZod2dXYnBzTmtsQ0pvOFM5XzZ1U2M5dXlyaUJUeVJmRGM1dERST0hDajFtU2FUU25JYlB0Qnl0RU5Xclp6dV9laUJwS2lHbFhHUXBlclNRSERmV3lXUW5XZGtqY19jS3lpN2JTTWJIT0Q5VUw0NFVLVGVKQ0xaNmVWLWNITDFBZmR0cy1aQzZxcmZUNVQ1by00TTlFOFo2S1ZuZGc?oc=5",
+      "time": "2026-09-23T12:34:36.234Z"
+    },
+    {
+      "ticker": "YUM",
+      "kind": "news",
+      "title": "Notícia: YUM · Yum Brands",
+      "body": "Yum! Brands stock closes at USD 139.71 as earnings estimates rise - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcWU0OE8yY0xoaEZ4R2xPY2F5a0E0NGlrcXZPZ3VQV1d1YjFuRlNRMnlEbHRVVFFVa2Z4bThwZElicGJ1UlZVcDNZSGxrUlpCSmJvMWpGanZyNkd6Wm1wd0dGYkREbW1aRDlxNWdUdHRfLVBadzFOeG5xYmxlczk3N0ZhY05DRjdkOUZRRzJDT1RpZTBBbkJaSmc2blltaTBVTm5HRWZMUVB1RHZLVGc4d1B2MWF3RTZtejhxMV9rd0xLMk5hU2c?oc=5",
+      "time": "2026-09-23T12:34:40.618Z"
+    },
+    {
+      "ticker": "CASY",
+      "kind": "news",
+      "title": "Notícia: CASY · Casey's General Stores",
+      "body": "Zacks Research Issues Positive Estimate for CASY Earnings - MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPanI5SDE3TlhEdzFYZkdNa1Q5NUdKckM0cVh5eFQyRkFyQmdpNnh3SU1lMjBlQ2FvOExfeGpIMlB4eExjZWs1aE9Ya2tYcEFrSGYtVlRySy1XdC1fQ1ZZZk9DOHZWajJQeXlBMjZ5bWhVaWs4YTZpS09xSUNYRldOeXI1Zjg1emtQclJNQjZoY1l4bmtGTHZ6d2dyQ2RoZHhGWlFJdzUxVFpEQUgxT1FlTkw1TUwxdHM3aDdUNndB?oc=5",
+      "time": "2026-09-23T12:34:41.554Z"
+    },
     {
       "ticker": "PL",
       "kind": "news",
