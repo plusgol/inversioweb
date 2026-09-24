@@ -1,6 +1,30 @@
 {
-  "updated": "2026-09-24T12:33:30.961Z",
+  "updated": "2026-09-24T17:31:32.535Z",
   "alerts": [
+    {
+      "ticker": "PL",
+      "kind": "news",
+      "title": "Notícia: PL · Planet Labs PBC",
+      "body": "Planet Labs Soars After Bezos-Backed Amazon Initiative - TipRanks",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPamw5MUxfOEJ1QzFzRHdHYTk2ZTJYU0hLX3RZQWN6dFRIS1c2Wm9TY3htYVVBdEE5ZFh0Z0xaS3g2bjVJdkQ0TjJlVmk2V3pzWnhHRkdUblNUZnRFVWZuSTJnT19qdHpyelpzR3RqYUNYTlU5cnQtMld4WTZ6Q0FjcmtvNzFUVVI3eE1xWTZQV2NKVkt2ZXIzYw?oc=5",
+      "time": "2026-09-24T17:31:22.066Z"
+    },
+    {
+      "ticker": "META",
+      "kind": "price",
+      "title": "META puja 3.71%",
+      "body": "Meta Platforms (META): 771.705 +3.71% al dia. Volum 1.13× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-24T17:31:22.600Z",
+      "pct": 3.71
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS puja 8.95%",
+      "body": "Nebius Group (NBIS): 246.895 +8.95% al dia. Volum 1.20× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-24T17:31:26.469Z",
+      "pct": 8.95
+    },
     {
       "ticker": "NBIS",
       "kind": "news",
