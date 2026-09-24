@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-24T20:44:16.566Z",
+  "updated": "2026-09-24T23:31:48.129Z",
   "alerts": [
+    {
+      "ticker": "TEF",
+      "kind": "price",
+      "title": "TEF cau -3.08%",
+      "body": "Telefónica (TEF): 3.367 -3.08% al dia. Volum 1.85× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-24T23:31:46.370Z",
+      "pct": -3.08
+    },
     {
       "ticker": "META",
       "kind": "price",
