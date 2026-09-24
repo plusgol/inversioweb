@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-24T17:31:32.535Z",
+  "updated": "2026-09-24T20:44:16.566Z",
   "alerts": [
+    {
+      "ticker": "META",
+      "kind": "price",
+      "title": "META puja 4.50%",
+      "body": "Meta Platforms (META): 777.59 +4.50% al dia. Volum 1.59× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-24T20:43:52.732Z",
+      "pct": 4.5
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS puja 7.44%",
+      "body": "Nebius Group (NBIS): 243.48 +7.44% al dia. Volum 1.64× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-24T20:43:56.427Z",
+      "pct": 7.44
+    },
     {
       "ticker": "PL",
       "kind": "news",
