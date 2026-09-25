@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-24T23:31:48.129Z",
+  "updated": "2026-09-25T17:31:34.213Z",
   "alerts": [
+    {
+      "ticker": "META",
+      "kind": "news",
+      "title": "Notícia: META · Meta Platforms",
+      "body": "Meta Stock Rally: Buy, Sell, or Hold? What to Do With Shares Now. - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSUtNSk9lS0w0Z3BuYVRlOE5iSUVaZmVydE1mY3Y1MnhJVkdyLUtJNTRiM0xpaTZ0N1pPSUhVdWtLS2JxdnV6UzhzR0R4QVVWSHF4bDl1cF9hakFsOFhBLTd3Sm5DQlJzdFNYUi1FS0Ywck5QWXp5LURaNEQ0dU5LYQ?oc=5",
+      "time": "2026-09-25T17:31:25.258Z"
+    },
     {
       "ticker": "TEF",
       "kind": "price",
