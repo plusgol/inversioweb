@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-28T14:59:04.883Z",
+  "updated": "2026-09-28T21:11:40.738Z",
   "alerts": [
+    {
+      "ticker": "META",
+      "kind": "news",
+      "title": "Notícia: META · Meta Platforms",
+      "body": "Meta enterprise AI platform: MongoDB CEO CJ Desai departure - qz.com",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBmS0s3eEk2Q0xpYm44cE9ITVJUWl8tQmZtVk8xWGN2ZnU2T1EzVHpCcGM3S0E4UnNCMTVKYkJrS2lSUGxrQ3N0LU45a3hjUzVxTGdLSE5KRkhpd25CMVJ1UzdENE5PX1FsTjBLcFl1Q2pXMjJJM0E?oc=5",
+      "time": "2026-09-28T21:11:32.435Z"
+    },
     {
       "ticker": "META",
       "kind": "price",
