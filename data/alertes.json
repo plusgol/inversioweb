@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-25T17:31:34.213Z",
+  "updated": "2026-09-28T14:59:04.883Z",
   "alerts": [
+    {
+      "ticker": "META",
+      "kind": "price",
+      "title": "META cau -4.08%",
+      "body": "Meta Platforms (META): 720.97 -4.08% al dia. Volum 0.51× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-28T14:58:55.025Z",
+      "pct": -4.08
+    },
     {
       "ticker": "META",
       "kind": "news",
