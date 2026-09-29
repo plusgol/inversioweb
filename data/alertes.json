@@ -1,6 +1,14 @@
 {
-  "updated": "2026-09-28T21:11:40.738Z",
+  "updated": "2026-09-29T18:54:27.403Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML puja 4.18%",
+      "body": "ASML Holding (ASML): 1601.2 +4.18% al dia. Volum 1.28× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-09-29T18:54:14.743Z",
+      "pct": 4.18
+    },
     {
       "ticker": "META",
       "kind": "news",
