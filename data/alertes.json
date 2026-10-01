@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-29T18:54:27.403Z",
+  "updated": "2026-10-01T19:34:34.558Z",
   "alerts": [
+    {
+      "ticker": "CABK",
+      "kind": "price",
+      "title": "CABK cau -4.60%",
+      "body": "CaixaBank (CABK): 12.03 -4.60% al dia. Volum 1.82× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-01T19:34:31.982Z",
+      "pct": -4.6
+    },
+    {
+      "ticker": "BBVA",
+      "kind": "price",
+      "title": "BBVA cau -4.03%",
+      "body": "BBVA (BBVA): 23.81 -4.03% al dia. Volum 1.72× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-01T19:34:33.654Z",
+      "pct": -4.03
+    },
     {
       "ticker": "ASML",
       "kind": "price",
