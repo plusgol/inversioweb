@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-05T15:34:50.956Z",
+  "updated": "2026-10-06T13:56:33.646Z",
   "alerts": [
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS puja 6.01%",
+      "body": "Nebius Group (NBIS): 246.55 +6.01% al dia. Volum 0.32× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-06T13:56:27.857Z",
+      "pct": 6.01
+    },
     {
       "ticker": "SPCX",
       "kind": "price",
