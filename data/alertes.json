@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-06T13:56:33.646Z",
+  "updated": "2026-10-08T14:23:28.414Z",
   "alerts": [
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -3.02%",
+      "body": "Nebius Group (NBIS): 229.98 -3.02% al dia. Volum 0.37× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-08T14:23:22.586Z",
+      "pct": -3.02
+    },
     {
       "ticker": "NBIS",
       "kind": "price",
