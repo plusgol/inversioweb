@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-08T14:23:28.414Z",
+  "updated": "2026-10-08T20:01:26.701Z",
   "alerts": [
+    {
+      "ticker": "PL",
+      "kind": "price",
+      "title": "PL cau -3.24%",
+      "body": "Planet Labs PBC (PL): 17.175 -3.24% al dia. Volum 1.54× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-08T20:01:16.236Z",
+      "pct": -3.24
+    },
     {
       "ticker": "NBIS",
       "kind": "price",
