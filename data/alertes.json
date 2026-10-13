@@ -1,6 +1,70 @@
 {
-  "updated": "2026-10-12T23:11:06.285Z",
+  "updated": "2026-10-13T14:48:50.248Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -4.65%",
+      "body": "ASML Holding (ASML): 1527.2 -4.65% al dia. Volum 0.51× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-13T14:48:37.818Z",
+      "pct": -4.65
+    },
+    {
+      "ticker": "ASML",
+      "kind": "news",
+      "title": "Notícia: ASML · ASML Holding",
+      "body": "ASML options traders build deep downside defenses ahead of earnings (ASML:NASDAQ) - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORW45Q2M2NlExeU81REU1X2FGUS1CR0sxUnZQTGY1SVBoVTEyZ25vdlhISm1oSGx3ZUU4MWctaHBHMDdtNG41RmxGMjJwbG5RaDVYOWdzaFdYTGZNYWQ5ZExGZXNTYmlkRXhBdWhUV2dCUkdvX2gzNUJ2Z0gzdU5rb0VnLVBwdEp4ZHF4elRBdnFXZ0Z3S2Q2US05c1dNWXNDWGZ0LW43Ylo?oc=5",
+      "time": "2026-10-13T14:48:38.292Z"
+    },
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD cau -3.11%",
+      "body": "BYD Company (BYD): 73.25 -3.11% al dia. Volum 1.36× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-13T14:48:38.814Z",
+      "pct": -3.11
+    },
+    {
+      "ticker": "SPCX",
+      "kind": "price",
+      "title": "SPCX cau -4.16%",
+      "body": "SpaceX (SPCX): 156.62 -4.16% al dia. Volum 0.30× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-13T14:48:39.694Z",
+      "pct": -4.16
+    },
+    {
+      "ticker": "PL",
+      "kind": "price",
+      "title": "PL cau -4.64%",
+      "body": "Planet Labs PBC (PL): 15.22 -4.64% al dia. Volum 0.34× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-13T14:48:40.587Z",
+      "pct": -4.64
+    },
+    {
+      "ticker": "META",
+      "kind": "price",
+      "title": "META puja 3.46%",
+      "body": "Meta Platforms (META): 768.645 +3.46% al dia. Volum 0.50× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-13T14:48:41.495Z",
+      "pct": 3.46
+    },
+    {
+      "ticker": "CAT",
+      "kind": "price",
+      "title": "CAT cau -3.46%",
+      "body": "Caterpillar (CAT): 771.678 -3.46% al dia. Volum 0.30× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-13T14:48:44.097Z",
+      "pct": -3.46
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -3.63%",
+      "body": "Nebius Group (NBIS): 202.425 -3.63% al dia. Volum 0.49× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-13T14:48:45.002Z",
+      "pct": -3.63
+    },
     {
       "ticker": "TEF",
       "kind": "price",
