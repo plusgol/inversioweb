@@ -1,6 +1,22 @@
 {
-  "updated": "2026-10-15T20:24:26.261Z",
+  "updated": "2026-10-16T16:34:31.111Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE cau -4.05%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 45.875 -4.05% al dia. Volum 0.84× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-16T16:34:16.958Z",
+      "pct": -4.05
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -9.94%",
+      "body": "Nebius Group (NBIS): 169.68 -9.94% al dia. Volum 0.87× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-16T16:34:25.401Z",
+      "pct": -9.94
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
