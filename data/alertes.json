@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-16T22:12:47.899Z",
+  "updated": "2026-10-20T17:29:31.610Z",
   "alerts": [
+    {
+      "ticker": "META",
+      "kind": "news",
+      "title": "Notícia: META · Meta Platforms",
+      "body": "Meta Platforms' AI Comeback Faces an Earnings Test—And a $10 Billion Charge - MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQXpzeEkwY3hBaFM5djkyZ0lXa3VtR1dNT1k2VW50eUk1d1JIRGRkOVFEWnk3VkhsWHROeGlCZ0FVemZqeDMwc1VFTVp4bVdPaTV1cGllZk9VNEdwanlxeFV2QjYza2w1R2xvXzRBNkgwWEs5ZjRmU2x6cm5HSHY1VWExYWNGcFJlMHJUZFdzb2pGSDZ4TE8wNFpYT3R5VXRrM2s0ZlIxWVphSXcxaHc?oc=5",
+      "time": "2026-10-20T17:29:21.436Z"
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
