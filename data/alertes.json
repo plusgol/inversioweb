@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-21T12:44:02.969Z",
+  "updated": "2026-10-21T17:41:43.666Z",
   "alerts": [
+    {
+      "ticker": "SPCX",
+      "kind": "price",
+      "title": "SPCX puja 7.51%",
+      "body": "SpaceX (SPCX): 158.89 +7.51% al dia. Volum 1.90× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-21T17:41:32.409Z",
+      "pct": 7.51
+    },
     {
       "ticker": "SPCX",
       "kind": "news",
