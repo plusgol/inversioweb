@@ -1,6 +1,22 @@
 {
-  "updated": "2026-10-21T17:41:43.666Z",
+  "updated": "2026-10-21T20:54:29.706Z",
   "alerts": [
+    {
+      "ticker": "SPCX",
+      "kind": "price",
+      "title": "SPCX puja 7.79%",
+      "body": "SpaceX (SPCX): 159.31 +7.79% al dia. Volum 2.61× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-21T20:54:18.768Z",
+      "pct": 7.79
+    },
+    {
+      "ticker": "SPCX",
+      "kind": "news",
+      "title": "Notícia: SPCX · SpaceX",
+      "body": "S&amp;P 500 notches 3-day win streak, Nasdaq jumps 1% as SpaceX and Tesla rally - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE44andoMWc1UnV1MnYtOVNwMFJxU3dmRFhYVEFlWEg5c0NTblp5VmJZNDR2TW5jRUdISW5pUmRsTVFmWjlXS0lMUTNOM0NEZV8zeldYOEVYelVaYzMtMGJxaW0tWnZZSUhEU2FxeEppUzVWTnpyY2Y0?oc=5",
+      "time": "2026-10-21T20:54:19.286Z"
+    },
     {
       "ticker": "SPCX",
       "kind": "price",
