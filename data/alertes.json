@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-20T17:29:31.610Z",
+  "updated": "2026-10-21T12:44:02.969Z",
   "alerts": [
+    {
+      "ticker": "SPCX",
+      "kind": "news",
+      "title": "Notícia: SPCX · SpaceX",
+      "body": "Stock Market Today: Dow Futures Steady; SpaceX Shares Surge on Tesla Deal Talks — Live Updates - WSJ",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQmtVSC1FUS1RTWFJU2t1bmFXenNxZHRsM0ZlRklRb3Fuajh2eXFDLWItTmpKTzZaU25lNzJ3dFZyR01BaXVIY01fbFNXVUVySHZOU0NYelhRSzQtSDlTOF9SWVQ1aUFxUGJKT0lzUExaOW9nNkZFYXpjcFNqT2c4QjE3SXRPdGs?oc=5",
+      "time": "2026-10-21T12:43:53.694Z"
+    },
     {
       "ticker": "META",
       "kind": "news",
