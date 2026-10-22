@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-21T20:54:29.706Z",
+  "updated": "2026-10-22T12:47:47.625Z",
   "alerts": [
+    {
+      "ticker": "YUM",
+      "kind": "news",
+      "title": "Notícia: YUM · Yum Brands",
+      "body": "McDonald’s vs. Yum! Brands: Which Fast Food Dividend Has More Room to Grow? - 24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVDhvOU4tMGh3UWw3cmJwRGE3eUE2MlF2c2g3N3Frb3MtcF84ejVDWUJTdkJNdHRjRVVtaC1PR2x0d2FOUXI2LUNKS3R5WVB0V2FOcjN1VE5jc010Z2pTcUx1TDBvNFdQdTJ3VHZzUWhGWVl0dzNrNzNjTVlzeWQ1VFRDTk52aFhGXzF2eWYwLXJYb25xUTZCZW9MQlI2SF96NXBVVHVQZG1hVVNDeTBvOXItQ1I?oc=5",
+      "time": "2026-10-22T12:47:40.318Z"
+    },
     {
       "ticker": "SPCX",
       "kind": "price",
