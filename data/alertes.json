@@ -1,6 +1,46 @@
 {
-  "updated": "2026-10-22T12:47:47.625Z",
+  "updated": "2026-10-22T17:40:28.380Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -4.97%",
+      "body": "ASML Holding (ASML): 1419.6 -4.97% al dia. Volum 0.99× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-22T17:40:15.084Z",
+      "pct": -4.97
+    },
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD cau -8.49%",
+      "body": "BYD Company (BYD): 67.4 -8.49% al dia. Volum 1.23× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-22T17:40:15.900Z",
+      "pct": -8.49
+    },
+    {
+      "ticker": "SPCX",
+      "kind": "price",
+      "title": "SPCX cau -7.78%",
+      "body": "SpaceX (SPCX): 146.91 -7.78% al dia. Volum 1.41× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-22T17:40:16.849Z",
+      "pct": -7.78
+    },
+    {
+      "ticker": "SPCX",
+      "kind": "news",
+      "title": "Notícia: SPCX · SpaceX",
+      "body": "Tesla: Valuation Is Key Consideration in Merger Talks With SpaceX - Morningstar",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZjdYVUpqb0d0Y0lGUGROYzBsSnJmWnozajF4SFA4RTJCM0dtbk0wb3FBNWh0dGtrdGZhUUNrMndTN2luS3lCVXh6NnRaS2pSV2NqZFRvZVB3eE9aWHhJNERVbGxrdGVuekJ0WHZuVHhUekpMYktTTm9HNlBUTGtndm1RMTRXajJfTU1FMTRBQ3pWLWhaWkVYZ1FXcGk3NDJjbXQ0UjFpdU8?oc=5",
+      "time": "2026-10-22T17:40:17.365Z"
+    },
+    {
+      "ticker": "META",
+      "kind": "price",
+      "title": "META cau -7.22%",
+      "body": "Meta Platforms (META): 647.15 -7.22% al dia. Volum 1.38× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-22T17:40:19.022Z",
+      "pct": -7.22
+    },
     {
       "ticker": "YUM",
       "kind": "news",
