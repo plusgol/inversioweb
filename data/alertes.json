@@ -1,6 +1,30 @@
 {
-  "updated": "2026-10-22T17:40:28.380Z",
+  "updated": "2026-10-22T20:49:38.727Z",
   "alerts": [
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD cau -5.27%",
+      "body": "BYD Company (BYD): 67.4 -5.27% al dia. Volum 2.18× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-22T20:49:27.773Z",
+      "pct": -5.27
+    },
+    {
+      "ticker": "SPCX",
+      "kind": "price",
+      "title": "SPCX cau -9.14%",
+      "body": "SpaceX (SPCX): 144.75 -9.14% al dia. Volum 2.13× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-22T20:49:28.664Z",
+      "pct": -9.14
+    },
+    {
+      "ticker": "META",
+      "kind": "price",
+      "title": "META cau -6.98%",
+      "body": "Meta Platforms (META): 648.85 -6.98% al dia. Volum 2.01× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-22T20:49:30.476Z",
+      "pct": -6.98
+    },
     {
       "ticker": "ASML",
       "kind": "price",
