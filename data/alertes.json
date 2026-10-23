@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-22T20:49:38.727Z",
+  "updated": "2026-10-23T12:26:04.399Z",
   "alerts": [
+    {
+      "ticker": "SPCX",
+      "kind": "news",
+      "title": "Notícia: SPCX · SpaceX",
+      "body": "SpaceX Stock Catches Rare Double Upgrade. How Shares Can Rise 70%. - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5rX2lzZ2F2Qnl6Vm5weTJtZVJ0NDVwLTZwNGQyUEtvUEZNYWoxSGFPSDFGQ2JZNkx0SnkwbUgwTEdzeHlnLWZ4eWQ0OWttSXNzMjNNdGFtQmwtQkJLMlVRenlNZDFyMnlaZVVxRmd1dXF1cndSR2lB?oc=5",
+      "time": "2026-10-23T12:25:54.174Z"
+    },
     {
       "ticker": "BYD",
       "kind": "price",
