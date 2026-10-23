@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-23T12:26:04.399Z",
+  "updated": "2026-10-23T20:32:52.709Z",
   "alerts": [
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD puja 6.23%",
+      "body": "BYD Company (BYD): 71.6 +6.23% al dia. Volum 3.04× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-23T20:32:41.694Z",
+      "pct": 6.23
+    },
     {
       "ticker": "SPCX",
       "kind": "news",
