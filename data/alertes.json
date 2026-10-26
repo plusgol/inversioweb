@@ -1,6 +1,30 @@
 {
-  "updated": "2026-10-23T20:32:52.709Z",
+  "updated": "2026-10-26T13:55:05.287Z",
   "alerts": [
+    {
+      "ticker": "META",
+      "kind": "news",
+      "title": "Notícia: META · Meta Platforms",
+      "body": "Meta Stock Has Dropped the Day After 3 Straight Earnings Reports. Is It a Buy Now? - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeklvb08xd1ZtTzkySTRZbVhLZzY2QzMyRTI4dFk5ZmlYdGx6Z1JsS21pZWl4SEVpTXBPYWJLaU5LYmhVbTFuMUxRR0wwSXhzTlZmWDN2TC1yb3BYRHNJRXVmY0gtNmtNMTVpbU84WXI4S0E4Snc5Vk8wcDBxelZOOG5pTmpfbURqZ0dVczN4OGtreFU?oc=5",
+      "time": "2026-10-26T13:54:56.651Z"
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -3.98%",
+      "body": "Nebius Group (NBIS): 152.43 -3.98% al dia. Volum 0.31× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-26T13:54:59.719Z",
+      "pct": -3.98
+    },
+    {
+      "ticker": "TEF",
+      "kind": "price",
+      "title": "TEF cau -6.09%",
+      "body": "Telefónica (TEF): 3.209 -6.09% al dia. Volum 2.02× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-26T13:55:03.619Z",
+      "pct": -6.09
+    },
     {
       "ticker": "BYD",
       "kind": "price",
