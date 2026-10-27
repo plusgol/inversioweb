@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-26T19:44:58.807Z",
+  "updated": "2026-10-27T12:59:26.074Z",
   "alerts": [
+    {
+      "ticker": "CAT",
+      "kind": "news",
+      "title": "Notícia: CAT · Caterpillar",
+      "body": "Caterpillar vs. Deere: Which Heavy Equipment Dividend Is Growing Faster? - 24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbmNHSVh1NGRfTmNmSWkxbDBuR2xvMlVUNGNTWl9oYWVuUmRqNlp1NHNuTEJMelFmYjRfRjcwelRSdVdZSFlKWk1tYUNIY0xWMXJ2N25vTzI0RHhLUjJSRmt0RmxFM0ZEVkRTNEtKWW9GYTE0b0kxeHNxdm96VjhUb1RkaHFLaTZ4azdYX2hpblozQmNnMjVXYWlmWUNWWlIwR1pLd2UyY0thSlVadU5RWWNzdw?oc=5",
+      "time": "2026-10-27T12:59:20.467Z"
+    },
     {
       "ticker": "TEF",
       "kind": "price",
