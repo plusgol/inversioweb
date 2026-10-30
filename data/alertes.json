@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-30T18:55:39.915Z",
+  "updated": "2026-10-30T22:48:39.439Z",
   "alerts": [
+    {
+      "ticker": "CAT",
+      "kind": "price",
+      "title": "CAT cau -3.81%",
+      "body": "Caterpillar (CAT): 622.75 -3.81% al dia. Volum 1.74× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-10-30T22:48:34.196Z",
+      "pct": -3.81
+    },
     {
       "ticker": "ASML",
       "kind": "price",
