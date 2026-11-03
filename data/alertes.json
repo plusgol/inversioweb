@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-30T22:48:39.439Z",
+  "updated": "2026-11-03T14:52:19.167Z",
   "alerts": [
+    {
+      "ticker": "YUM",
+      "kind": "news",
+      "title": "Notícia: YUM · Yum Brands",
+      "body": "Yum! Brands (NYSE:YUM) Posts Earnings Results, Beats Expectations By $0.09 EPS - MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPT0hZY2JSZm1wV0hPMTdyVFZJM3ZfZ0NoenJDUjRtMHcwU0pqX1Y0SWJONzJtOWZuVTJ0XzZmTjVQeE96NURpdXFnX2FHQVVSVnN5eU0tdUhhYTM1VkdVTk1pamEyMVhaWWpYNnZpeF9kaWFvMGozX1VkUHJ5S3o2bXNiZnVnLVNYazJKLXU4X0pPSGk4bGtFbUJWVW5pVm5tX05vbW1nWTRYdFFpTjd0QmV5a1NhSlNFTHVZTzVmV0dqUENUZmRsYndrZTBYOXd6?oc=5",
+      "time": "2026-11-03T14:52:11.836Z"
+    },
     {
       "ticker": "CAT",
       "kind": "price",
