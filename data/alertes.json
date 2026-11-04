@@ -1,6 +1,22 @@
 {
-  "updated": "2026-11-03T14:52:19.167Z",
+  "updated": "2026-11-04T15:07:55.463Z",
   "alerts": [
+    {
+      "ticker": "YUM",
+      "kind": "news",
+      "title": "Notícia: YUM · Yum Brands",
+      "body": "RBC raises Yum! Brands stock price target on Taco Bell recovery By Investing.com - Investing.com India",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQb3AzS2NPN3RqaHZWQWtsMGVzUGc0em5KbnBwc29PNXZ5Ukc0cDhya0ZTNEhFampsRXBZczU3Vzg3ZTAta2luZk5kcTFETUZCM2hWZEFtRUlqRnJfa1ZvRXlXdnVaY1JKS3lpNGV0Nno0dG9lSTl2U0x0X0hQYnUwQlA1dGJfcXU1TkJiUE1HS3pObHNWMzA2RHJRd3MtNUx0WmNZQWg2UUZhaERwOWVJbWZIZUNiUlIzaVh3VnlvQXI?oc=5",
+      "time": "2026-11-04T15:07:48.583Z"
+    },
+    {
+      "ticker": "CAT",
+      "kind": "price",
+      "title": "CAT cau -4.48%",
+      "body": "Caterpillar (CAT): 595.97 -4.48% al dia. Volum 0.45× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-04T15:07:49.944Z",
+      "pct": -4.48
+    },
     {
       "ticker": "YUM",
       "kind": "news",
