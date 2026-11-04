@@ -1,6 +1,46 @@
 {
-  "updated": "2026-11-04T15:07:55.463Z",
+  "updated": "2026-11-04T21:17:22.258Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -3.42%",
+      "body": "ASML Holding (ASML): 1337.6 -3.42% al dia. Volum 2.15× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-04T21:17:06.930Z",
+      "pct": -3.42
+    },
+    {
+      "ticker": "YUM",
+      "kind": "price",
+      "title": "YUM puja 5.92%",
+      "body": "Yum Brands (YUM): 166.31 +5.92% al dia. Volum 1.61× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-04T21:17:14.822Z",
+      "pct": 5.92
+    },
+    {
+      "ticker": "CAT",
+      "kind": "price",
+      "title": "CAT cau -5.23%",
+      "body": "Caterpillar (CAT): 591.3 -5.23% al dia. Volum 1.77× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-04T21:17:16.480Z",
+      "pct": -5.23
+    },
+    {
+      "ticker": "ITX",
+      "kind": "price",
+      "title": "ITX puja 5.24%",
+      "body": "Inditex (ITX): 59.06 +5.24% al dia. Volum 1.54× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-04T21:17:19.011Z",
+      "pct": 5.24
+    },
+    {
+      "ticker": "BBVA",
+      "kind": "price",
+      "title": "BBVA puja 4.32%",
+      "body": "BBVA (BBVA): 22.44 +4.32% al dia. Volum 1.52× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-04T21:17:21.548Z",
+      "pct": 4.32
+    },
     {
       "ticker": "YUM",
       "kind": "news",
