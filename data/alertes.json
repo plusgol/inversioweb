@@ -1,6 +1,46 @@
 {
-  "updated": "2026-11-05T15:11:23.914Z",
+  "updated": "2026-11-05T21:28:32.433Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE cau -5.09%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 42.015 -5.09% al dia. Volum 3.51× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T21:28:20.753Z",
+      "pct": -5.09
+    },
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -6.55%",
+      "body": "ASML Holding (ASML): 1250 -6.55% al dia. Volum 2.60× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T21:28:21.609Z",
+      "pct": -6.55
+    },
+    {
+      "ticker": "SPCX",
+      "kind": "price",
+      "title": "SPCX cau -9.05%",
+      "body": "SpaceX (SPCX): 123.62 -9.05% al dia. Volum 1.64× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T21:28:23.131Z",
+      "pct": -9.05
+    },
+    {
+      "ticker": "CAT",
+      "kind": "price",
+      "title": "CAT cau -6.37%",
+      "body": "Caterpillar (CAT): 553.64 -6.37% al dia. Volum 1.84× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T21:28:27.119Z",
+      "pct": -6.37
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -14.94%",
+      "body": "Nebius Group (NBIS): 120.37 -14.94% al dia. Volum 2.01× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T21:28:27.980Z",
+      "pct": -14.94
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
