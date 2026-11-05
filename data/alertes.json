@@ -1,6 +1,62 @@
 {
-  "updated": "2026-11-04T21:17:22.258Z",
+  "updated": "2026-11-05T15:11:23.914Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE cau -4.00%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 42.5 -4.00% al dia. Volum 2.13× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T15:11:10.745Z",
+      "pct": -4
+    },
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -5.86%",
+      "body": "ASML Holding (ASML): 1259.2 -5.86% al dia. Volum 0.81× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T15:11:11.698Z",
+      "pct": -5.86
+    },
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD puja 4.70%",
+      "body": "BYD Company (BYD): 75.7 +4.70% al dia. Volum 2.05× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T15:11:12.704Z",
+      "pct": 4.7
+    },
+    {
+      "ticker": "SPCX",
+      "kind": "price",
+      "title": "SPCX cau -8.86%",
+      "body": "SpaceX (SPCX): 123.88 -8.86% al dia. Volum 0.40× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T15:11:13.689Z",
+      "pct": -8.86
+    },
+    {
+      "ticker": "SPCX",
+      "kind": "news",
+      "title": "Notícia: SPCX · SpaceX",
+      "body": "SpaceX Lessors Look To Sell $40 Bil AI Deal. ARK Buys The Dip On SPCX Stock. - Investor's Business Daily",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWGJXUGZWcjh1MWNNeFNGZmRPTHF6bVBzOGx5NHFVQlVOUnFFMVZLbEV3Ul93cF9yUElSUUNVd1NhektWMU5VcEdCUmhJQms5dGxZRlBwSFRPODBIRXVLWV96QTg2VklRTk96QlpZNXZpTF9Vck05SjlxSnliVjFPcDFrTDk4OHF4Sk92b09LX1RZVjZ3d2ZVOVdYc1dIV1lxLXBEbDBydjVaVUR4VXZ1cHZQWVVjTmoydU5KeU9nZHE?oc=5",
+      "time": "2026-11-05T15:11:14.133Z"
+    },
+    {
+      "ticker": "CAT",
+      "kind": "price",
+      "title": "CAT cau -4.24%",
+      "body": "Caterpillar (CAT): 566.247 -4.24% al dia. Volum 0.40× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T15:11:18.042Z",
+      "pct": -4.24
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -14.76%",
+      "body": "Nebius Group (NBIS): 120.635 -14.76% al dia. Volum 0.49× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-05T15:11:18.926Z",
+      "pct": -14.76
+    },
     {
       "ticker": "ASML",
       "kind": "price",
