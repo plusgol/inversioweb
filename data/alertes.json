@@ -1,6 +1,38 @@
 {
-  "updated": "2026-11-05T21:28:32.433Z",
+  "updated": "2026-11-09T17:11:08.853Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML puja 4.69%",
+      "body": "ASML Holding (ASML): 1343.8 +4.69% al dia. Volum 1.09× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-09T17:10:56.806Z",
+      "pct": 4.69
+    },
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD cau -4.29%",
+      "body": "BYD Company (BYD): 72.45 -4.29% al dia. Volum 0.91× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-09T17:10:57.736Z",
+      "pct": -4.29
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "news",
+      "title": "Notícia: NBIS · Nebius Group",
+      "body": "Nebius Stock (NBIS) Set for 17% Move After Q3 Earnings This Week, Say Options Traders - TipRanks",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWU9nRUhPcGc3eXFiSHNLMWEtaFctWXdJb0ZueS0yOEtCSDVrdm1VRXdGMU1rbkFNTVhoQ2swTXlmUTlYb3U1QXZhdF9VVDZfQnZIM3VzODllSk1XYXItMDZtNlFQYVFvbEJrVENJekZlTEhzNTFYWm9iMEpaQ0tfMEw0b29tVHI1MTF1bF82TVJMZHdXbnhPOF84Um9PQTRVdFBsNFlibDZEOXlkcVFuYg?oc=5",
+      "time": "2026-11-09T17:11:04.344Z"
+    },
+    {
+      "ticker": "ITX",
+      "kind": "news",
+      "title": "Notícia: ITX · Inditex",
+      "body": "Inditex stock: Jefferies keeps 67-euro target ahead of results - ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVnNwM3c2X2NZcmFVMjdocW9Mcms0SmFLYU5tYmVCRnlGajFheDQxbkhscFdqTnpndG1sOC0wS2xGZmpSeVVEcDRsZjNfT0pPMk4zYmR4cFFqVEJGZUNGYXZNNm9JaDBqZkdqLUhBYUFOODJtaXFYM055WHpUSnN3QllYaDVhRTVqWTFTMW8zdGZzU2ExRGFqbHoxNHBlSGYtNjBDbFlieFgtTkJ2cFpiaUdaT1EwcXNwRjJxalZ1SFRmQQ?oc=5",
+      "time": "2026-11-09T17:11:05.969Z"
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
