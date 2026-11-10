@@ -1,6 +1,14 @@
 {
-  "updated": "2026-11-09T17:11:08.853Z",
+  "updated": "2026-11-10T21:23:27.472Z",
   "alerts": [
+    {
+      "ticker": "CABK",
+      "kind": "price",
+      "title": "CABK puja 3.30%",
+      "body": "CaixaBank (CABK): 12.515 +3.30% al dia. Volum 1.81× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-10T21:23:25.133Z",
+      "pct": 3.3
+    },
     {
       "ticker": "ASML",
       "kind": "price",
