@@ -1,6 +1,30 @@
 {
-  "updated": "2026-11-10T21:23:27.472Z",
+  "updated": "2026-11-11T14:55:40.846Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE puja 3.13%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 43.635 +3.13% al dia. Volum 0.43× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-11T14:55:28.656Z",
+      "pct": 3.13
+    },
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD cau -3.82%",
+      "body": "BYD Company (BYD): 69.2 -3.82% al dia. Volum 1.14× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-11T14:55:30.334Z",
+      "pct": -3.82
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS puja 13.18%",
+      "body": "Nebius Group (NBIS): 151.655 +13.18% al dia. Volum 0.41× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-11T14:55:36.153Z",
+      "pct": 13.18
+    },
     {
       "ticker": "CABK",
       "kind": "price",
