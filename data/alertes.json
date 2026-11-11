@@ -1,6 +1,14 @@
 {
-  "updated": "2026-11-11T14:55:40.846Z",
+  "updated": "2026-11-11T21:45:24.563Z",
   "alerts": [
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS puja 15.44%",
+      "body": "Nebius Group (NBIS): 154.69 +15.44% al dia. Volum 1.53× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-11T21:45:20.291Z",
+      "pct": 15.44
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
