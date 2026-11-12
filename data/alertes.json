@@ -1,6 +1,14 @@
 {
-  "updated": "2026-11-12T15:46:38.398Z",
+  "updated": "2026-11-12T21:55:54.428Z",
   "alerts": [
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -16.84%",
+      "body": "Nebius Group (NBIS): 128.64 -16.84% al dia. Volum 2.60× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-12T21:55:49.955Z",
+      "pct": -16.84
+    },
     {
       "ticker": "ASML",
       "kind": "price",
