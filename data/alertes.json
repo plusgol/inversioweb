@@ -1,6 +1,30 @@
 {
-  "updated": "2026-11-11T21:45:24.563Z",
+  "updated": "2026-11-12T15:46:38.398Z",
   "alerts": [
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -3.26%",
+      "body": "ASML Holding (ASML): 1358 -3.26% al dia. Volum 0.63× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-12T15:46:26.969Z",
+      "pct": -3.26
+    },
+    {
+      "ticker": "META",
+      "kind": "news",
+      "title": "Notícia: META · Meta Platforms",
+      "body": "Alphabet and Meta Platforms Pay Dividends. Is Either of Them Worth Owning for Income? - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNmtGS1NuQ3c4ejBmQjhhaENuUGd5eHdRb3JFXzk5eElWZG14dUNfZm53TEliWUwwVllDd2NkMkQxZ3IxcE5EWWEtNlktaFpmME82bzNkV1RFdElsb0JjWlR1cGY2Wng5YnN5OGNTY3I4eFQ5UnpyUTJWR05BTUUxT1ctbU1wVDltY0N2NV9FTXVadUcyOGJHQ3ctSmRLRjVXbkNkMQ?oc=5",
+      "time": "2026-11-12T15:46:30.781Z"
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -18.56%",
+      "body": "Nebius Group (NBIS): 125.98 -18.56% al dia. Volum 1.46× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-12T15:46:33.715Z",
+      "pct": -18.56
+    },
     {
       "ticker": "NBIS",
       "kind": "price",
