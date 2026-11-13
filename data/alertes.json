@@ -1,6 +1,22 @@
 {
-  "updated": "2026-11-12T21:55:54.428Z",
+  "updated": "2026-11-13T15:07:43.598Z",
   "alerts": [
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD cau -3.77%",
+      "body": "BYD Company (BYD): 65 -3.77% al dia. Volum 1.16× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-13T15:07:32.180Z",
+      "pct": -3.77
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -11.53%",
+      "body": "Nebius Group (NBIS): 113.81 -11.53% al dia. Volum 0.53× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-13T15:07:38.433Z",
+      "pct": -11.53
+    },
     {
       "ticker": "NBIS",
       "kind": "price",
