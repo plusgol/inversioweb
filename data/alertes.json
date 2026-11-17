@@ -1,6 +1,22 @@
 {
-  "updated": "2026-11-16T16:46:36.880Z",
+  "updated": "2026-11-17T16:42:10.626Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE cau -3.03%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 41.09 -3.03% al dia. Volum 1.00× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-17T16:41:57.349Z",
+      "pct": -3.03
+    },
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -5.16%",
+      "body": "ASML Holding (ASML): 1239.2 -5.16% al dia. Volum 0.90× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-17T16:41:58.250Z",
+      "pct": -5.16
+    },
     {
       "ticker": "BYD",
       "kind": "price",
