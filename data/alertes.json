@@ -1,6 +1,14 @@
 {
-  "updated": "2026-11-17T16:42:10.626Z",
+  "updated": "2026-11-17T23:40:04.982Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE cau -4.06%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 40.96 -4.06% al dia. Volum 1.83× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-17T23:39:53.304Z",
+      "pct": -4.06
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
