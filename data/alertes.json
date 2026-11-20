@@ -1,6 +1,30 @@
 {
-  "updated": "2026-11-20T15:55:46.093Z",
+  "updated": "2026-11-20T22:30:21.416Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE cau -7.22%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 39 -7.22% al dia. Volum 2.85× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-20T22:30:08.632Z",
+      "pct": -7.22
+    },
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -9.33%",
+      "body": "ASML Holding (ASML): 1168 -9.33% al dia. Volum 1.98× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-20T22:30:09.576Z",
+      "pct": -9.33
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS cau -16.11%",
+      "body": "Nebius Group (NBIS): 81.31 -16.11% al dia. Volum 1.71× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-20T22:30:16.777Z",
+      "pct": -16.11
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
