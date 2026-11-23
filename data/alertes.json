@@ -1,6 +1,22 @@
 {
-  "updated": "2026-11-20T22:30:21.416Z",
+  "updated": "2026-11-23T18:59:19.182Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE puja 6.95%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 41.71 +6.95% al dia. Volum 1.97× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-23T18:59:06.764Z",
+      "pct": 6.95
+    },
+    {
+      "ticker": "NBIS",
+      "kind": "price",
+      "title": "NBIS puja 19.68%",
+      "body": "Nebius Group (NBIS): 97.31 +19.68% al dia. Volum 1.38× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-23T18:59:14.589Z",
+      "pct": 19.68
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
