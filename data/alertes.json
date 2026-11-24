@@ -1,6 +1,22 @@
 {
-  "updated": "2026-11-23T18:59:19.182Z",
+  "updated": "2026-11-24T18:40:04.344Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE cau -4.45%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 39.855 -4.45% al dia. Volum 1.56× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-24T18:39:50.851Z",
+      "pct": -4.45
+    },
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD cau -3.29%",
+      "body": "BYD Company (BYD): 60.3 -3.29% al dia. Volum 1.31× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-24T18:39:52.659Z",
+      "pct": -3.29
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
