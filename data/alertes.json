@@ -1,6 +1,38 @@
 {
-  "updated": "2026-11-24T18:40:04.344Z",
+  "updated": "2026-11-25T17:49:06.340Z",
   "alerts": [
+    {
+      "ticker": "QDVE",
+      "kind": "price",
+      "title": "QDVE cau -4.03%",
+      "body": "S&P 500 Info Tech ETF (QDVE): 38.25 -4.03% al dia. Volum 1.27× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-25T17:48:52.817Z",
+      "pct": -4.03
+    },
+    {
+      "ticker": "ASML",
+      "kind": "price",
+      "title": "ASML cau -5.79%",
+      "body": "ASML Holding (ASML): 1131.6 -5.79% al dia. Volum 1.19× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-25T17:48:53.833Z",
+      "pct": -5.79
+    },
+    {
+      "ticker": "BYD",
+      "kind": "price",
+      "title": "BYD cau -5.31%",
+      "body": "BYD Company (BYD): 57.95 -5.31% al dia. Volum 1.10× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-25T17:48:54.829Z",
+      "pct": -5.31
+    },
+    {
+      "ticker": "CABK",
+      "kind": "price",
+      "title": "CABK cau -4.19%",
+      "body": "CaixaBank (CABK): 10.97 -4.19% al dia. Volum 1.78× la mitjana diària. Avís automàtic, no és consell financer.",
+      "time": "2026-11-25T17:49:03.818Z",
+      "pct": -4.19
+    },
     {
       "ticker": "QDVE",
       "kind": "price",
